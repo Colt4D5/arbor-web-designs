@@ -1,10 +1,9 @@
-import { sveltekit } from '@sveltejs/kit/vite';
-import autoprefixer from 'autoprefixer';
-import postcssPresetEnv from 'postcss-preset-env';
+const autoprefixer = require('autoprefixer');
+const postcssPresetEnv = require('postcss-preset-env');
+
 
 const config = {
 	plugins: [
-		sveltekit(),
 		autoprefixer,
 		postcssPresetEnv({
 			stage: 3,
@@ -17,4 +16,4 @@ const config = {
 	]
 };
 
-export default config;
+module.exports = config;
