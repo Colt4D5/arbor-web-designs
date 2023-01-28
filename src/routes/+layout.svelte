@@ -1,20 +1,16 @@
 <script>
 	import '@picocss/pico/css/pico.min.css';
-	import '../app.postcss';
+	import '$css/vars.postcss';
+	import '$css/app.postcss';
+	import '$css/utilities.postcss';
+	import Header from '$components/Header.svelte';
+	import Footer from '../lib/components/Footer.svelte';
 </script>
 
-<header class="container">
-	<nav>
-		<ul><li><strong>Title</strong></li></ul>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/">Home</a></li>
-			<li><a href="/">Home</a></li>
-			<li><a href="/">Home</a></li>
-		</ul>
-	</nav>
-</header>
+<Header />
+
 <main class="container">
 	<slot />
 </main>
-<footer class="container">Footer</footer>
+
+<Footer />

@@ -1,0 +1,52 @@
+/* Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #929623;
+  --primary-hover: #b9bf2a;
+  --primary-focus: rgba(195, 198, 118, 0.25);
+  --primary-inverse: #FFF;
+  
+  --secondary: #bd6028;
+  --secondary-hover: #e36c27;
+  --secondary-focus: rgba(173, 109, 72, 0.25);
+  --secondary-inverse: #FFF;
+  
+  --contrast: #4C48AD;
+  --contrast-hover: #807ce6;
+  --contrast-focus: rgba(128, 124, 230, 0.25);
+  --contrast-inverse: #FFF;
+}
+
+/* Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --primary: #a9ad48;
+    --primary-hover: #c3c92c;
+    --primary-focus: rgba(195, 198, 118, 0.25);
+    --primary-inverse: #FFF;
+    
+    --secondary: #ad6d48;
+    --secondary-hover: #e36c27;
+    --secondary-focus: rgba(173, 109, 72, 0.25);
+    --secondary-inverse: #FFF;
+  }
+}
+
+/* Pink Dark scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
+  --primary: #a9ad48;
+  --primary-hover: #e36c27;
+  --primary-focus: rgba(216, 27, 96, 0.25);
+  --primary-inverse: #FFF;
+}
+
+/* (Common styles) */
+:root {
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+}

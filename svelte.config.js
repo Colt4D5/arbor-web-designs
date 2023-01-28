@@ -8,7 +8,8 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			$components: path.resolve('./src/lib/components'),
-			$img: path.resolve('./src/lib/images'),
+			$assets: path.resolve('./src/lib/assets'),
+			$css: path.resolve('./src/lib/assets/css'),
 		}
 	},
 
