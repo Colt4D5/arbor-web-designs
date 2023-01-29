@@ -2,24 +2,22 @@
 	import Hamburger from '$components/Hamburger.svelte';
   import logo from '$assets/svg/logo.svg'
 
-  import { navItems } from '$utils/NavItems.js'
-
   import { page } from '$app/stores'
 
-  import { onMount } from 'svelte'
+  // import { onMount } from 'svelte'
 
-  let isSticky = false
+  // let isSticky = false
 
-  onMount(() => {
-    isSticky = window.scrollY > 100
-    window.addEventListener('scroll', e => {
-      isSticky = window.scrollY > 100
-    })
-  });
+  // onMount(() => {
+  //   isSticky = window.scrollY > 100
+  //   window.addEventListener('scroll', e => {
+  //     isSticky = window.scrollY > 100
+  //   })
+  // });
 </script>
 
 
-<header class:isSticky={isSticky}>
+<header>
   <div class="container">
     <nav>
       <ul id="logo-container"><li><a href="/"><img src={ logo } alt="Arbor Web Designs | Moreno Valley, CA" /></a></li></ul>
@@ -41,17 +39,22 @@
 
 <style lang="postcss">
   header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
     margin: 0 auto;
+    background-color: rgb(0 0 0 / 0);
+    z-index: 4;
+    transition: all 0.5s ease;
     & .container {
       position: relative;
       & nav {
         & #logo-container {
           & img {
-            width: clamp(125px, 30vw, 250px);
+            filter: invert(1);
+            width: clamp(150px, 30vw, 250px);
+            transition: all 0.5s ease;
           }
         }
         & #nav-container {
@@ -59,6 +62,7 @@
             & a {
               color: #fff;
               position: relative;
+              margin-left: 1.5rem;
               &:hover {
                 color: var(--primary);
               }
@@ -70,7 +74,7 @@
                 right: 0;
                 width: 0;
                 height: 3px;
-                background-color: var(--primary);
+                background-color: var(--secondary);
                 transition: width 0.2s ease-out;
               }
             }
@@ -87,6 +91,22 @@
         }
       }
     }
+    /* &.isSticky {
+      background-color: rgba(73, 74, 31, 0.8);
+      transition: transform 0.5s ease;
+      & .container {
+        & nav {
+          & #logo-container {
+            & img {
+              width: 125px;
+            }
+          }
+          & #nav-container {
+            padding: 0.5rem;
+          }
+        }
+      }
+    } */
   }
   :global(html[data-theme="dark"]) {
     & header {
