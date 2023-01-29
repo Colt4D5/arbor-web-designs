@@ -10,6 +10,7 @@ const config = {
 			$components: path.resolve('./src/lib/components'),
 			$assets: path.resolve('./src/lib/assets'),
 			$css: path.resolve('./src/lib/assets/css'),
+			$utils: path.resolve('./src/lib/utils'),
 		}
 	},
 
