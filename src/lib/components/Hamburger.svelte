@@ -35,7 +35,7 @@
         width: 100%;
         height: 4px;
         border-radius: 8px;
-        background-color: #000;
+        background-color: #fff;
         transition: all 0.3s ease;
         pointer-events: none;
         &.top {

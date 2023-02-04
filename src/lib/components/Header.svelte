@@ -3,17 +3,6 @@
   import logo from '$assets/svg/logo.svg'
 
   import { page } from '$app/stores'
-
-  // import { onMount } from 'svelte'
-
-  // let isSticky = false
-
-  // onMount(() => {
-  //   isSticky = window.scrollY > 100
-  //   window.addEventListener('scroll', e => {
-  //     isSticky = window.scrollY > 100
-  //   })
-  // });
 </script>
 
 

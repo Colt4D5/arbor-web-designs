@@ -10,8 +10,7 @@ function ensureIntersectionObserver() {
 	}
 
   intersectionObserver = new IntersectionObserver(
-		(entries, o) => {
-			console.log(o)
+		(entries) => {
 			entries.forEach(entry => {
 				const eventName = entry.isIntersecting ? 'enterViewport' : 'exitViewport';
 				entry.target.dispatchEvent(new CustomEvent(eventName));
