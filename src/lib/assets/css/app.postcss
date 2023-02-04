@@ -1,12 +1,20 @@
 /* Global styles */
+
 button.no-styles {
   background-color: transparent;
   border: none;
   width: auto;
 }
 
-main > section {
-  margin-bottom: 8rem;
+main  {
+  & section {
+    margin-bottom: 8rem;
+    & h2 {
+      & theme-color {
+        color: var(--primary);
+      }
+    }
+  }
 }
 
 /* [data-theme="light"] { */

@@ -1,14 +1,16 @@
 <script>
 	import Hero from "$components/home/Hero.svelte";
+	import Intro from "$components/home/Intro.svelte";
+	import Results from "../lib/components/home/Results.svelte";
 
 </script>
 <svelte:head>
   <title>Arbor Web Designs | Moreno Valley, CA</title>
 </svelte:head>
 
-
 <Hero />
-<h1>This is page content</h1>
+<Intro />
+<Results />
 
 <style lang="postcss">
   h1 {
