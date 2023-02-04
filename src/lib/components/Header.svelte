@@ -6,7 +6,7 @@
 </script>
 
 
-<header>
+<header id="header">
   <div class="container">
     <nav>
       <ul id="logo-container"><li><a href="/"><img src={ logo } alt="Arbor Web Designs | Moreno Valley, CA" /></a></li></ul>
@@ -53,7 +53,7 @@
               position: relative;
               margin-left: 1.5rem;
               &:hover {
-                color: var(--primary);
+                color: var(--secondary);
               }
               &::before {
                 content: '';

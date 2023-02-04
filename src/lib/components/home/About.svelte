@@ -18,8 +18,8 @@
     margin-bottom: 8rem;
     & p {
       max-width: 800px;
-      line-height: 1.7;
-      font-size: clamp(1em, 3vw, 1.1em);
+      /* line-height: 1.7; */
+      /* font-size: clamp(1em, 3vw, 1.1em); */
       margin: 0 auto 1rem;
       &.highlight {
         font-size: clamp(1.25em, 3vw, 1.4em);

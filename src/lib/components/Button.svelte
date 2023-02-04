@@ -19,11 +19,13 @@
     font-size: 0.9rem;
     font-weight: 500;
     border-radius: 2rem 0 2rem 0;
+    border: none;
     font-family: sans-serif;
     transition: color 0.3s ease,
                 background 0.3s ease,
                 border 0.3s ease;
     &:hover {
+      /* background: var(--secondary-hover); */
       background: var(--secondary-hover);
     }
     &.secondary {

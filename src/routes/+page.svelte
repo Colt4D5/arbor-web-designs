@@ -1,9 +1,10 @@
 <script>
+	import Pricing from './../lib/components/Pricing.svelte';
 	import About from './../lib/components/home/About.svelte';
 	import Hero from "$components/home/Hero.svelte";
 	import Intro from "$components/home/Intro.svelte";
 	import Offer from "../lib/components/home/Offer.svelte";
-	import Results from "../lib/components/home/Results.svelte"
+	import Performance from "../lib/components/home/Performance.svelte"
 
   export let data
 </script>
@@ -14,6 +15,7 @@
 
 <Hero />
 <Intro />
-<Results />
+<Performance />
 <Offer params={data.params} />
 <About />
+<Pricing />

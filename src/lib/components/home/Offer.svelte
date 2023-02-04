@@ -14,19 +14,14 @@
   #offer {
     z-index: 2;
     position: relative;
-    background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.8), rgba(var(--primary-rgb), 0.6));
-    margin-bottom: 8rem;
+    /* background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.8), rgba(var(--primary-rgb), 0.6)); */
     border-radius: 6rem 0 6rem 0;
     & .container {
       width: min(85%, 750px);
       margin: 0 auto;
-      padding: 4rem 0;
+      /* padding: 4rem 0; */
       & h2 {
-        font-size: clamp(2rem, 4vw, 3rem);
-        color: #fff;
-      }
-      & p {
-        color: #fff;
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
       }
     }
   }

@@ -31,7 +31,7 @@
     position: relative;
     padding: 4rem 1rem 2rem;
     margin-bottom: 12rem;
-    background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.7), rgba(var(--primary-rgb), 0.3));
+    background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.8), rgba(var(--primary-rgb), 0.5));
     height: 700px;
     & .container {
       padding: 0;
@@ -52,7 +52,7 @@
       & p {
         width: min(95%, 500px);
         margin-bottom: 1rem;
-        line-height: 1.7;
+        /* line-height: 1.7; */
         color: #fff;
       }
       & :global(.button) {

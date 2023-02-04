@@ -1,9 +1,16 @@
 /* Global styles */
+html {
+  scroll-behavior: smooth;
+}
 
 button.no-styles {
   background-color: transparent;
   border: none;
   width: auto;
+}
+
+:is(p, h1, h2, h3, h4, h5, h6, li) {
+  cursor: text;
 }
 
 main  {
@@ -14,6 +21,9 @@ main  {
         color: var(--primary);
       }
     }
+  }
+  & .spacer {
+    margin-bottom: 8rem;
   }
 }
 

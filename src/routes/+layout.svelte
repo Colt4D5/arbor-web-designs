@@ -6,6 +6,7 @@
 	import Header from '$components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import OffcanvasNav from '$lib/components/OffcanvasNav.svelte';
+	import ToTopBtn from '../lib/components/ToTopBtn.svelte';
 </script>
 
 <Header />
@@ -14,3 +15,4 @@
 </main>
 <Footer />
 <OffcanvasNav />
+<ToTopBtn />
