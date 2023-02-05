@@ -6,15 +6,16 @@
   <div class="container">
     <h2>Pricing</h2>
     <div class="pricing-card">
-      <h3 class="card-heading">Flat Rate</h3>
+      <h3 class="card-heading">Included <br>Features</h3>
       <div class="pricing-card-contents">
-        <h4>$2,500+</h4>
+        <h4>$0</h4>
         <ul>
-          <li>Website Design</li>
-          <li>Website Build</li>
-          <li>Logo</li>
-          <li>Limited Edits</li>
-          <li>Hosting additional</li>
+          <li>Website design/build</li>
+          <li>Mobile Responsive</li>
+          <li>Fast & secure</li>
+          <li>Custom coded</li>
+          <li>Logo creation</li>
+          <li>Image Optimization</li>
         </ul>
         <Button href="/services" classes="secondary cta">Learn More</Button>
       </div>
@@ -24,25 +25,27 @@
       <div class="pricing-card-contents">
         <h4>$150/mo</h4>
         <ul>
+          <li>$0 down</li>
           <li>Unlimited Edits</li>
-          <li>Hosting Included</li>
-          <li>Design/Build</li>
-          <li>Logo</li>
-          <li>All FREE w/ Subscription</li>
+          <li>Up to 5 pages</li>
+          <li>Search Engine Optimized</li>
+          <li>Google Analytics</li>
+          <li>24/7 technical support</li>
         </ul>
         <Button href="/services" classes="cta">Learn More</Button>
       </div>
     </div>
     <div class="pricing-card">
-      <h3 class="card-heading">Premium Subscription</h3>
+      <h3 class="card-heading">Premium <br>Subscription</h3>
       <div class="pricing-card-contents">
         <h4>$300/mo</h4>
         <ul>
-          <li>Lorem, ipsum dolor.</li>
-          <li>Lorem, ipsum dolor.</li>
-          <li>Lorem, ipsum dolor.</li>
-          <li>Lorem, ipsum dolor.</li>
-          <li>Lorem, ipsum dolor.</li>
+          <li>1,000+ word blog post</li>
+          <li>SEO-friendly</li>
+          <li>Keyword Research</li>
+          <li>Up to 8 pages</li>
+          <li>Premium animations</li>
+          <li>$100 additional posts</li>
         </ul>
         <Button href="/services" classes="secondary cta">Learn More</Button>
       </div>
@@ -62,7 +65,7 @@
         margin-bottom: 4rem;
       }
       & .pricing-card {
-        width: min(80%, 275px);
+        width: min(80%, 325px);
         margin: 10px;
         margin-top: 10px;
         background-color: #fff;
@@ -81,6 +84,7 @@
           align-items: center;
           margin: 0;
           font-weight: 400;
+          line-height: 1.2;
           &.active {
             background-color: var(--primary);
             color: #fff;
@@ -91,16 +95,17 @@
           min-height: 300px;
           position: relative;
           & h4 {
-            margin-bottom: 1em;
+            margin-bottom: 0.5em;
             font-size: 1.75em;
           }
           & ul {
             list-style: none;
-            margin: 10px 0;
+            margin: 0.75rem 0 2rem;
             padding: 0;
             & li {
               list-style: none;
               margin: 5px 0;
+              font-size: 1.25rem;
             }
           }
         }
@@ -111,6 +116,11 @@
       & .container {
         & .pricing-card:nth-child(3) {
           scale: 1.2;
+          & ul {
+            & li {
+              font-size: 1.1rem;
+            }
+          }
         }
       }
     }

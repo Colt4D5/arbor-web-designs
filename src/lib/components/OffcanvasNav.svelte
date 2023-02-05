@@ -42,14 +42,14 @@
 <style lang="postcss">
   #offcanvas-nav {
     position: fixed;
-    right: 0;
+    left: 100%;
     top: 0;
     height: 100vh;
     background-color: #eee;
     z-index: 99;
     padding: 6rem 1rem 1rem;
     transition: transform 0.5s ease;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(0, 0, 0);
     width: min(80%, 450px);
     text-align: right;
     & ul {
@@ -82,7 +82,7 @@
   }
   :global(html[data-mobile-menu="is_open"]) {
     & #offcanvas-nav {
-      transform: translate3d(0, 0, 0);
+      transform: translate3d(-100%, 0, 0);
     }
     & .hamburger-overlay {
       opacity: 1;
