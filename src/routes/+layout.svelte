@@ -10,7 +10,7 @@
 </script>
 
 <Header />
-<main>
+<main id="main">
 	<slot />
 </main>
 <Footer />

@@ -30,7 +30,6 @@
   #hero {
     position: relative;
     padding: 4rem 1rem 2rem;
-    margin-bottom: 12rem;
     background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.8), rgba(var(--primary-rgb), 0.5));
     height: 700px;
     & .container {
@@ -83,11 +82,10 @@
       z-index: 2;
     }
     
-    /* @include mixin.breakpoint(large) { */
-    @media screen and (min-width: 64em) {
+    @media screen and (width >= 64em) {
       height: 900px;
       padding-top: 100px;
-      margin-bottom: 2rem;
+      margin-bottom: 6rem;
       padding-bottom: 0;
       & #mockup {
         position: absolute;

@@ -1,6 +1,14 @@
 /* Global styles */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  & :is(*, *::before, *::after) {
+    box-sizing: border-box;
+  }
+  & main {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 button.no-styles {

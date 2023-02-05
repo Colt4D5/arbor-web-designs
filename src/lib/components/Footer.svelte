@@ -5,7 +5,7 @@
 </script>
 
 <footer id="footer">
-  <div class="footer-top container">
+  <div class="footer-top container grid">
     <div class="footer-col logo">
       <a href="/">
         <img src={ logo } alt="Web Designs">
@@ -56,12 +56,13 @@
   footer {
     position: relative;
     background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.8), rgba(var(--primary-rgb), 0.8)), url(src/lib/assets/img/footer-bg-texture.webp);
-    overflow: hidden;
     text-align: center;
     color: #fff;
     margin-top: -6rem;
     & .footer-top.container {
       padding: 32vw 1rem 3rem;
+      margin-inline: auto; 
+
       & .footer-col {
         margin-bottom: 2.5rem;
         & h2 {
@@ -83,6 +84,10 @@
           }
         }
         & nav {
+          justify-content: center;
+          @media (width > 40em) {
+            justify-content: flex-start;
+          }
           & ul {
             display: block;
             margin: 0;
@@ -105,7 +110,7 @@
     }
     & #footer-wave {
       position: absolute;
-      top: 0;
+      top: -2px;
       left: 0;
       width: 100vw;
       height: auto;
@@ -114,6 +119,7 @@
     & .footer-top {
       & .footer-col {
         &.logo {
+          min-width: 250px;
           & img {
             max-width: 250px;
             filter: invert(1);
@@ -172,15 +178,12 @@
         }
       }
     }
-    @media screen and (min-width: 40em) {
+    @media screen and (width >= 40em) {
       margin-top: -12vw;
       & .footer-top.container {
         padding: 32vw 1rem 3rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
         & .footer-col {
           text-align: left;
-          padding-left: 4rem;
           & h2 {
             &::after {
               width: calc(100% + 2rem);

@@ -11,7 +11,7 @@
     position: fixed; 
     right: 1rem;
     bottom: 1rem;
-    background-color: var(--primary);
+    background-color: rgba(var(--primary-rgb), 0.5);
     color: #fff;
     padding: 0.75em 1em 0.5em;
     border-radius: 1.5em 0 1.5em 0;
@@ -20,9 +20,9 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease,
-                background-color 0.3s ease;
+    background-color 0.3s ease;
     &:hover {
-      background-color: var(--primary-hover);
+      background-color: rgba(var(--primary-rgb), 0.85);
     }
     &::before {
       content: url(../assets/svg/chevron-up.svg);

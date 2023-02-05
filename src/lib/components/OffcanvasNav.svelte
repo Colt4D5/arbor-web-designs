@@ -22,13 +22,13 @@
   <nav>
     <ul>
       <li class="nav-item" class:active={$page.url.pathname === '/' && $page.url.hash !== "#about-me"}>
-        <a href="/">Home</a>
+        <a href="/" on:click={toggleMenu}>Home</a>
       </li>
       <li class="nav-item" class:active={$page.url.hash == '#about-me'}>
-        <a href="/#about-me">About</a>
+        <a href="/#about-me" on:click={toggleMenu}>About</a>
       </li>
       <li class="nav-item" class:active={$page.url.pathname == '/contact'}>
-        <a href="/contact">Contact</a>
+        <a href="/contact" on:click={toggleMenu}>Contact</a>
       </li>
     </ul>
   </nav>
