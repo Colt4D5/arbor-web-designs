@@ -55,7 +55,7 @@
 <style lang="postcss">
   footer {
     position: relative;
-    background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.8), rgba(var(--primary-rgb), 0.8)), url(../assets/img/footer-bg-texture.webp);
+    background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.8), rgba(var(--primary-rgb), 0.8)), url(https://res.cloudinary.com/dgo7sqipz/image/upload/v1675582419/Arbor%20Web%20Designs/footer-bg-texture_hiflfh.webp);
     text-align: center;
     color: #fff;
     margin-top: -6rem;

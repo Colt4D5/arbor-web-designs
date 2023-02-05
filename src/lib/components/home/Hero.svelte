@@ -3,7 +3,7 @@
   import heroWave from '$assets/svg/hero-wave.svg'
   import heroWaveDark from '$assets/svg/hero-wave_dark.svg'
 
-  import mockup from '$assets/img/mockups1.png'
+  // import mockup from '$assets/img/mockup.webp'
 </script>
 
 <section id="hero">
@@ -20,9 +20,9 @@
   </picture>
 
   <picture>
-    <source media="(max-width: 1023px)" srcset={ mockup }>
-    <source media="(min-width: 1024px)" srcset={ mockup }>
-    <img src={ mockup } alt="Web Mockups" id="mockup" />
+    <source media="(max-width: 1023px)" srcset="https://res.cloudinary.com/dgo7sqipz/image/upload/v1675582419/Arbor%20Web%20Designs/mockup_qcl2hf.webp">
+    <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dgo7sqipz/image/upload/v1675582419/Arbor%20Web%20Designs/mockup_qcl2hf.webp">
+    <img src="https://res.cloudinary.com/dgo7sqipz/image/upload/v1675582419/Arbor%20Web%20Designs/mockup_qcl2hf.webp" alt="Web Mockups" id="mockup" />
   </picture>
 </section>
 
