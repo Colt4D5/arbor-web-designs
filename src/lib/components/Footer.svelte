@@ -10,6 +10,9 @@
       <a href="/">
         <img src={ logo } alt="Web Designs">
       </a>
+      <p>Moreno Valley, CA<br>
+      <a href="tel:+19517560273">951.756.0273</a><br>
+      <a href="mailto:info@arborweb.com">info@arborweb.com</a></p>
     </div>
     <div class="footer-col navigation">
       <h2>Navigation</h2>
@@ -71,7 +74,7 @@
           position: relative;
           margin-bottom: 1.5rem;
           color: #fff;
-          font-size: clamp(1.5rem, 4vw, 2rem);
+          font-size: clamp(1.25rem, 4vw, 1.5rem);
           &::after {
             content: '';
             position: absolute;
@@ -95,6 +98,7 @@
               display: block;
               padding: 0.15em 0;
               & a {
+                font-family: 'Montserrat Alternates';
                 font-size: clamp(1.1em, 3vw, 1.25em);
               }
             }
@@ -124,7 +128,14 @@
             max-width: 250px;
             filter: invert(1);
             display: inline;
-            margin: 0 auto;
+            margin: 0 auto 1rem;
+          }
+          & p {
+            color: #fff;
+            line-height: 1.7;
+            & a {
+              font-weight: bold;
+            }
           }
         }
         &.contact-form {

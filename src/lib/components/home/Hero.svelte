@@ -44,7 +44,8 @@
         /* text-transform: none; */
         width: min(95%, 500px);
         margin-bottom: 1rem;
-        font-size: clamp(2.5rem, 5vw, 3.5rem);
+        font-size: clamp(1.75rem, 5vw, 3rem);
+        font-weight: 700;
         line-height: 1.2;
         color: #fff;
       }

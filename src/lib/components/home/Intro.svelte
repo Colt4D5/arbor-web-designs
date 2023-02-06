@@ -2,11 +2,7 @@
   import Button from '$components/Button.svelte'
 
   import observer from '$utils/useObserverAction';
-
-  function fadeUp(e) {
-    const target = e.target
-    target.classList.add('is-in-view')
-  }
+  import { fadeUp } from '$utils/useObserverAction';
 </script>
 
 

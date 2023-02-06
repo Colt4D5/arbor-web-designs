@@ -1,12 +1,33 @@
 <script>
   export let params
+
+  import observer from '$utils/useObserverAction';
+  import { fadeUp } from '$utils/useObserverAction';
+
+  import checkmark from '$assets/svg/checkmark.svg'
 </script>
 
-<section id="offer">
-  <div class="container">
-    <h2 id="offer-title"><theme-color>$0</theme-color> Down, <theme-color>{params === 'presale33' ? '$100' : '$150'}</theme-color> Per Month</h2>
-    <p>$0 down for a standard 5 page small business website. If you need more than that then we have to do custom pricing based on the scope of work, number of additional pages, and time involved. </p>
-    <p>You own your domain, content, listing, and profiles.</p>
+<section data-transition="fade-up" use:observer on:enterViewport={fadeUp} id="offer">
+  <div class="container grid">
+    <div class="left">
+      <h2 id="offer-title"><theme-color>$0</theme-color> Down, <theme-color>{params === 'presale33' ? '$100' : '$150'}</theme-color> Per Month</h2>
+      <p>$0 down for a standard 5 page small business website. If you need more than that then we have to do custom pricing based on the scope of work, number of additional pages, and time involved. </p>
+      <p>You own your domain, content, listing, and profiles.</p>
+    </div>
+    <div class="right">
+      <div class="item">
+        <h3>Hosting fees included</h3>
+        <p>$0 down and $0 for hosting with the subscription model.</p>
+      </div>
+      <div class="item">
+        <h3>Hosting fees included</h3>
+        <p>$0 down and $0 for hosting with the subscription model.</p>
+      </div>
+      <div class="item">
+        <h3>Hosting fees included</h3>
+        <p>$0 down and $0 for hosting with the subscription model.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -14,14 +35,44 @@
   #offer {
     z-index: 2;
     position: relative;
-    /* background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.8), rgba(var(--primary-rgb), 0.6)); */
     border-radius: 6rem 0 6rem 0;
     & .container {
-      width: min(85%, 750px);
       margin: 0 auto;
-      /* padding: 4rem 0; */
+      gap: 3rem;
       & h2 {
-        font-size: clamp(1.75rem, 4vw, 2.5rem);
+        font-size: clamp(1.75rem, 4vw, 2.25rem);
+      }
+      & .right {
+        position: relative;
+        &::before {
+          content: url(../../assets/svg/bg-leaves.svg);
+          position: absolute;
+          width: 80%;
+          aspect-ratio: 1/1;
+          z-index: -1;
+          opacity: 0.15;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        & .item {
+          padding-left: 2rem;
+          margin-bottom: 0.5rem;
+          & h3 {
+            font-size: 1.25rem;
+            margin: 0;
+            position: relative;
+            &::before {
+              content: url(../../assets/svg/checkmark.svg);
+              position: absolute;
+              top: 50%;
+              left: 0;
+              width: 32px;
+              height: 32px;
+              transform: translate(calc(-100% - 6px), -50%)
+            }
+          }
+        }
       }
     }
   }

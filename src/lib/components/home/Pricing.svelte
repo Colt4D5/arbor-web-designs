@@ -1,8 +1,11 @@
 <script>
 	import Button from "$components/Button.svelte";
+
+  import observer from '$utils/useObserverAction';
+  import { fadeUp } from '$utils/useObserverAction';
 </script>
 
-<section id="price-cards">
+<section data-transition="fade-up" use:observer on:enterViewport={fadeUp} id="price-cards">
   <div class="container">
     <h2>Pricing</h2>
     <div class="pricing-card">
@@ -15,7 +18,6 @@
           <li>Fast & secure</li>
           <li>Custom coded</li>
           <li>Logo creation</li>
-          <li>Image Optimization</li>
         </ul>
         <Button href="/services" classes="secondary cta">Learn More</Button>
       </div>
@@ -45,7 +47,6 @@
           <li>Keyword Research</li>
           <li>Up to 8 pages</li>
           <li>Premium animations</li>
-          <li>$100 additional posts</li>
         </ul>
         <Button href="/services" classes="secondary cta">Learn More</Button>
       </div>
@@ -96,7 +97,7 @@
           position: relative;
           & h4 {
             margin-bottom: 0.5em;
-            font-size: 1.75em;
+            font-size: 1.5em;
           }
           & ul {
             list-style: none;
@@ -105,7 +106,7 @@
             & li {
               list-style: none;
               margin: 5px 0;
-              font-size: 1.25rem;
+              font-size: 1rem;
             }
           }
         }
@@ -118,7 +119,7 @@
           scale: 1.2;
           & ul {
             & li {
-              font-size: 1.1rem;
+              font-size: 0.9rem;
             }
           }
         }

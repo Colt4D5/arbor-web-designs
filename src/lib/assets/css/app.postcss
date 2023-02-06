@@ -2,12 +2,41 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 4rem;
+  font-family: "Noto Serif";
+  & :is(h1, h2, h3, h4, h5, h6) {
+    font-family: 'Montserrat Alternates';
+  }
+  & h1 {
+    font-weight: 400;
+  }
   & :is(*, *::before, *::after) {
     box-sizing: border-box;
   }
   & main {
     position: relative;
     z-index: 2;
+    & section {
+      margin-bottom: 12rem;
+      & h2 {
+        position: relative;
+        & theme-color {
+          color: var(--primary);
+        }
+      }
+    }
+    & [data-transition="fade-up"] {
+      opacity: 0;
+      transform: translate3d(0, 3rem, 0);
+      transition: opacity 1s ease,
+                  transform 1.5s ease;
+      &.is-in-view {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    & .spacer {
+      margin-bottom: 8rem;
+    }
   }
 }
 
@@ -19,30 +48,6 @@ button.no-styles {
 
 :is(p, h1, h2, h3, h4, h5, h6, li) {
   cursor: text;
-}
-
-main  {
-  & section {
-    margin-bottom: 12rem;
-    & h2 {
-      & theme-color {
-        color: var(--primary);
-      }
-    }
-    & [data-transition="fade-up"] {
-      opacity: 0;
-      transform: translate3d(0, 3rem, 0);
-      transition: opacity 1s ease,
-                  transform 1s ease;
-      &.is-in-view {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-      }
-    }
-  }
-  & .spacer {
-    margin-bottom: 8rem;
-  }
 }
 
 /* [data-theme="light"] { */

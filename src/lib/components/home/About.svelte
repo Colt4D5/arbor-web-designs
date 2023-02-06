@@ -1,4 +1,9 @@
-<section id="about" aria-labelledby="about-title">
+<script>
+  import observer from '$utils/useObserverAction';
+  import { fadeUp } from '$utils/useObserverAction';
+</script>
+
+<section data-transition="fade-up" use:observer on:enterViewport={fadeUp} id="about" aria-labelledby="about-title">
   <div class="container">
     <h2 id="about-title">About <theme-color>Arbor</theme-color></h2>
     <p class="highlight">My name is Colton Arthur Allen and I’m a professional web designer and developer located in the Inland Empire, CA.<!-- Working as a front-end web developer at a marketing firm who partners with one of the largest beauty product retailers in the world has taught me a great many things when it comes to properly built websites that are user friendly and performant. --></p>
@@ -16,6 +21,25 @@
   #about {
     text-align: center;
     margin-bottom: 8rem;
+    position: relative;
+    overflow-x: hidden;
+    &::before {
+      content: url(../../assets/svg/bg-leaves.svg);
+      position: absolute;
+      left: -2rem;
+      bottom: 0;
+      width: 12rem;
+      opacity: 0.1;
+    }
+    &::after {
+      content: url(../../assets/svg/bg-leaves.svg);
+      position: absolute;
+      right: -2rem;
+      top: 0;
+      width: 16rem;
+      transform: scaleX(-100%);
+      opacity: 0.1;
+    }
     & p {
       max-width: 800px;
       /* line-height: 1.7; */

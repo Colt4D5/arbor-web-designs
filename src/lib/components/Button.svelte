@@ -10,17 +10,18 @@
 <style lang="postcss">
   a.button {
     display: inline-block;
-    padding: 1.25em 2em;
+    padding: 1em 2em;
     background-color: var(--secondary);
     text-transform: uppercase;
     color: #fff;
     border-radius: 0.25em;
     margin-top: 0.5em;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 500;
     border-radius: 2rem 0 2rem 0;
     border: none;
-    font-family: sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-transform: lowercase;
     transition: color 0.3s ease,
                 background 0.3s ease,
                 border 0.3s ease;
