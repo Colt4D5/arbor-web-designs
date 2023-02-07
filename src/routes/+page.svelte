@@ -19,5 +19,6 @@
 <Spacer />
 <Performance />
 <Offer params={data.params} />
+<Spacer />
 <About />
 <Pricing />

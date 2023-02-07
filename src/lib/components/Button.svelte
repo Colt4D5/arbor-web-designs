@@ -20,6 +20,7 @@
     font-weight: 500;
     border-radius: 2rem 0 2rem 0;
     border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 25px, rgba(0, 0, 0, 0.1) 0px 5px 10px;
     font-family: 'Montserrat Alternates', sans-serif;
     text-transform: lowercase;
     transition: color 0.3s ease,

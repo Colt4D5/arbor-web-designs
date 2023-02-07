@@ -2,14 +2,12 @@
   import Button from '$components/Button.svelte'
   import heroWave from '$assets/svg/hero-wave.svg'
   import heroWaveDark from '$assets/svg/hero-wave_dark.svg'
-
-  // import mockup from '$assets/img/mockup.webp'
 </script>
 
 <section id="hero">
   <div class="container">
     <h1>Web Design & Development</h1>
-    <p>Where <strong>beautiful design</strong> and top-tier <strong>performance</strong> is grafted together to get you in front of your clients, all for only $150/mo.</p>
+    <p>Where <strong>beautiful design</strong> and top-tier <strong>performance</strong> is grafted together to get you in front of your clients, all for only <strong>$150/mo</strong> and <strong>$0 down</strong>.</p>
     <Button href="/contact">Let's Get Started</Button>
   </div>
   <picture>
@@ -30,7 +28,7 @@
   #hero {
     position: relative;
     padding: 4rem 1rem 2rem;
-    background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.8), rgba(var(--primary-rgb), 0.5));
+    background: linear-gradient(145deg, rgba(var(--primary-dark-rgb), 0.9), rgba(var(--primary-dark-rgb), 0.7)), url(https://res.cloudinary.com/dgo7sqipz/image/upload/v1675582419/Arbor%20Web%20Designs/footer-bg-texture_hiflfh.webp);
     height: 700px;
     & .container {
       padding: 0;
@@ -41,7 +39,6 @@
       width: min(90%, 1200px);
       z-index: 3;
       & h1 {
-        /* text-transform: none; */
         width: min(95%, 500px);
         margin-bottom: 1rem;
         font-size: clamp(1.75rem, 5vw, 3rem);
@@ -52,7 +49,6 @@
       & p {
         width: min(95%, 500px);
         margin-bottom: 1rem;
-        /* line-height: 1.7; */
         color: #fff;
       }
       & :global(.button) {

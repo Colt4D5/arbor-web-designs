@@ -10,6 +10,7 @@
   .spacer {
     position: relative;
     text-align: center;
+    margin-top: -4rem;
     & .leaf-divider {
       width: 32px;
     }

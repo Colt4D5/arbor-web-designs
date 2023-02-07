@@ -11,21 +11,22 @@
   <div class="container grid">
     <div class="left">
       <h2 id="offer-title"><theme-color>$0</theme-color> Down, <theme-color>{params === 'presale33' ? '$100' : '$150'}</theme-color> Per Month</h2>
-      <p>$0 down for a standard 5 page small business website. If you need more than that then we have to do custom pricing based on the scope of work, number of additional pages, and time involved. </p>
+      <p>Affordable web design services with flexible pricing options. Get a 5-page website for just $150 a month with $0 down. Let me help you create a professional and effective online presence without breaking the bank."</p>
+      <!-- <p>$0 down for a standard 5 page small business website. If you need more than that then we have to do custom pricing based on the scope of work, number of additional pages, and time involved. </p> -->
       <p>You own your domain, content, listing, and profiles.</p>
     </div>
     <div class="right">
       <div class="item">
-        <h3>Hosting fees included</h3>
-        <p>$0 down and $0 for hosting with the subscription model.</p>
+        <h3>Hosting Fees Included</h3>
+        <p>Secure, reliable, and fast website hosting without added costs.</p>
       </div>
       <div class="item">
-        <h3>Hosting fees included</h3>
-        <p>$0 down and $0 for hosting with the subscription model.</p>
+        <h3>Unlimited Edits</h3>
+        <p>24-hour turnaround for unlimited edits.</p>
       </div>
       <div class="item">
-        <h3>Hosting fees included</h3>
-        <p>$0 down and $0 for hosting with the subscription model.</p>
+        <h3>24/7 Customer Service</h3>
+        <p>Peace of mind for 24/7 technical assistance, questions, and edits.</p>
       </div>
     </div>
   </div>
@@ -44,6 +45,12 @@
       }
       & .right {
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+        height: 100%;
         &::before {
           content: url(../../assets/svg/bg-leaves.svg);
           position: absolute;
@@ -62,6 +69,7 @@
             font-size: 1.25rem;
             margin: 0;
             position: relative;
+            text-transform: lowercase;
             &::before {
               content: url(../../assets/svg/checkmark.svg);
               position: absolute;
@@ -71,6 +79,9 @@
               height: 32px;
               transform: translate(calc(-100% - 6px), -50%)
             }
+          }
+          & p {
+            margin: 0;
           }
         }
       }
