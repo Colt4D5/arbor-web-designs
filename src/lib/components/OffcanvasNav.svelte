@@ -63,7 +63,7 @@
         & a {
           font-size: 1.75rem;
           padding-right: 1rem;
-           'Montserrat Alternates';
+          font-family: 'Montserrat Alternates', sans-serif;
           color: #444;
         }
         &.active {
