@@ -5,7 +5,7 @@
 
 <section data-transition="fade-up" use:observer on:enterViewport={fadeUp} id="about" aria-labelledby="about-title">
   <div class="container">
-    <h2 id="about-title">About <theme-color>Arbor</theme-color></h2>
+    <h2 id="about-title">about <theme-color>Arbor</theme-color></h2>
     <p class="highlight">My name is Colton Arthur Allen and I’m a professional web designer and developer located in the Inland Empire, CA.</p>
 
     <p>I offer an <span style="font-style:italic;">array</span> of web services with a new, more affordable alternative than a traditional web design firm: all the benefits of superior quality, fast turnaround times, and the personal touch with 24/7 customer service, all at an affordable subscription model.</p>

@@ -11,11 +11,11 @@
     <nav>
       <ul id="logo-container"><li><a href="/"><img src={ logo } alt="Arbor Web Designs | Moreno Valley, CA" /></a></li></ul>
       <ul id="nav-container" class="show-for-large">
-        <li class="nav-item" class:active={$page.url.pathname === '/' && $page.url.hash !== "#about"}>
+        <li class="nav-item" class:active={$page.url.pathname === '/'}>
           <a href="/">Home</a>
         </li>
-        <li class="nav-item" class:active={$page.url.hash == '#about'}>
-          <a href="/#about">About</a>
+        <li class="nav-item" class:active={$page.url.pathname === '/about-arbor'}>
+          <a href="/about-arbor">About</a>
         </li>
         <li class="nav-item" class:active={$page.url.pathname == '/contact'}>
           <a href="/contact">Contact</a>

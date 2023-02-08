@@ -6,7 +6,7 @@
 
 <section id="hero">
   <div class="container">
-    <h1>Web Design & Development</h1>
+    <h1>web design & development</h1>
     <p>Where <strong>beautiful design</strong> and top-tier <strong>performance</strong> is grafted together to get you in front of your clients, all for only <strong>$150/mo</strong> and <strong>$0 down</strong>.</p>
     <Button href="/contact">Let's Get Started</Button>
   </div>

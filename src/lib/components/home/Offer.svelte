@@ -10,7 +10,7 @@
 <section data-transition="fade-up" use:observer on:enterViewport={fadeUp} id="offer">
   <div class="container grid">
     <div class="left">
-      <h2 id="offer-title"><theme-color>$0</theme-color> Down, <theme-color>{params === 'presale33' ? '$100' : '$150'}</theme-color> Per Month</h2>
+      <h2 id="offer-title"><theme-color>$0</theme-color> down, <theme-color>{params === 'presale33' ? '$100' : '$150'}</theme-color> per month</h2>
       <p>Affordable web design services with flexible pricing options. Get a 5-page website for just $150 a month with $0 down. Let me help you create a professional and effective online presence without breaking the bank."</p>
       <!-- <p>$0 down for a standard 5 page small business website. If you need more than that then we have to do custom pricing based on the scope of work, number of additional pages, and time involved. </p> -->
       <p>You own your domain, content, listing, and profiles.</p>

@@ -20,7 +20,7 @@
 
 <section data-transition="fade-up" use:observer on:enterViewport={fadeUp} id="results">
   <div class="container">
-    <h2 id="results-title">Out<theme-color>Perform</theme-color></h2>
+    <h2 id="results-title">out<theme-color>Perform</theme-color></h2>
     <div class="grid">
       <div class="item">
         <div class="progress">

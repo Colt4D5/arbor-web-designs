@@ -7,7 +7,7 @@
 
 <section data-transition="fade-up" use:observer on:enterViewport={fadeUp} id="price-cards">
   <div class="container">
-    <h2>Pricing</h2>
+    <h2>pricing</h2>
     <div class="pricing-card">
       <h3 class="card-heading">Included <br>Features</h3>
       <div class="pricing-card-contents">

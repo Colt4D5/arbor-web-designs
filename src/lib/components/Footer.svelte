@@ -15,18 +15,18 @@
       <a href="mailto:info@arborweb.com">info@arborweb.com</a></p>
     </div>
     <div class="footer-col navigation">
-      <h2>Navigation</h2>
+      <h2>navigation</h2>
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/#about-me">About Me</a></li>
+          <li><a href="/about-arbor">About Us</a></li>
           <li><a href="/#price-cards">Pricing</a></li>
-          <li><a href="/contact/">Contact Me</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
         </ul>
       </nav>
     </div>
     <div class="footer-col contact-form">
-      <h2>Contact Us</h2>
+      <h2>contact us</h2>
 
       <form id="contact" name="contact" method="post" data-netlify="true">
         <div class="input-group">
@@ -155,14 +155,15 @@
               box-sizing: border-box;
             }
             & button {
-              /* width: min(100%, 250px); */
               background-color: var(--secondary);
               color: #fff;
-              text-transform: uppercase;
-              padding: 1rem;
+              text-transform: lowercase;
+              font-family: "Montserrat Alternates", sans-serif;
+              font-size: clamp(1.25rem, 3vw, 1.4rem);
+              padding: 0.75rem 1rem;
               border: none;
               box-shadow: 4px 3px 6px rgb(0 0 0 / 0.4);
-              border-radius: 2em 0 2em 0;
+              border-radius: 1.5em 0 1.5em 0;
               transition: all 0.3s ease;
               &:hover {
                 border-color: transparent;

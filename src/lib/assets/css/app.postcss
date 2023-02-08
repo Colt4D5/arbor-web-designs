@@ -19,10 +19,10 @@ html {
       margin-bottom: 12rem;
       & h2 {
         position: relative;
-        & theme-color {
-          color: var(--primary);
-        }
       }
+    }
+    & theme-color {
+      color: var(--primary);
     }
     & [data-transition="fade-up"] {
       opacity: 0;
@@ -37,6 +37,9 @@ html {
     & .spacer {
       margin-bottom: 8rem;
     }
+  }
+  & input, & textarea, [type="submit"] {
+    border-radius: 1rem 0 1rem 0;
   }
 }
 
