@@ -82,7 +82,7 @@
               top: 50%;
               transform: translate(-50%, -50%);
               font-size: 1.75rem;
-              font-family: monospace;
+               monospace;
             }
             & svg {
               opacity: 0;
@@ -104,7 +104,7 @@
             margin: 1rem 0 1rem;
             font-size: 1.25rem;
             font-weight: 400;
-            font-family: sans-serif;
+             sans-serif;
             white-space: nowrap;
           }
           & .description {

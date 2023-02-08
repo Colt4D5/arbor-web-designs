@@ -52,7 +52,7 @@
               color: #fff;
               position: relative;
               margin-left: 1.5rem;
-              font-family: 'Montserrat Alternates';
+              font-family: 'Montserrat Alternates', sans-serif;
               &:hover {
                 color: var(--secondary);
               }

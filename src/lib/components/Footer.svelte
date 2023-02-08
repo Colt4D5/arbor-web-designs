@@ -100,7 +100,7 @@
               display: block;
               padding: 0.15em 0;
               & a {
-                font-family: 'Montserrat Alternates';
+                font-family: 'Montserrat Alternates', sans-serif;
                 font-size: clamp(1.1em, 3vw, 1.25em);
               }
             }
