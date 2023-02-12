@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,6 +28,17 @@
 		<link rel="mask-icon" href="%sveltekit.assets%/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
+
+		<script>		
+			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.querySelector('html').dataset.theme = 'dark';
+				themeToggle.checked = false;
+			} else {
+				document.querySelector('html').dataset.theme = 'light';
+				themeToggle.checked = true;
+			}
+		</script>
+		
 
 		%sveltekit.head%
 	</head>

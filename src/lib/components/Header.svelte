@@ -20,6 +20,9 @@
         <li class="nav-item" class:active={$page.url.pathname == '/contact'}>
           <a href="/contact">Contact</a>
         </li>
+        <li class="toggle-li">
+          <input id="toggle" class="toggle" type="checkbox">
+        </li>
       </ul>
       <Hamburger />
     </nav>
@@ -74,6 +77,53 @@
                   width: 100%;
                   left: 0;
                   right: auto;
+                }
+              }
+            }
+            &.toggle-li {
+              margin-left: 2rem;
+              & .toggle {
+                --size: 1.5rem;
+                
+                appearance: none;
+                outline: none;
+                cursor: pointer;
+                transform: translate3d(5px, 2px, 0);
+                
+                width: var(--size);
+                height: var(--size);
+                box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
+                border-radius: 999px;
+                color: #b8b8ff;
+                background-color: transparent;
+                border: none;
+                z-index: 1;
+                
+                transition: all 500ms;
+                &:hover {
+                  color: #8383ff;
+                }
+                &:checked {
+                  --ray-size: calc(var(--size) * -0.4);
+                  --offset-orthogonal: calc(var(--size) * 0.65);
+                  --offset-diagonal: calc(var(--size) * 0.45);
+
+                  transform: scale(0.75) translate3d(5px, 2px, 0) rotate(180deg);
+                  color: hsl(40, 100%, 50%);
+                  box-shadow: 
+                    inset 0 0 0 var(--size),
+                    calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
+                    var(--offset-orthogonal) 0 0 var(--ray-size),
+                    0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size),
+                    0 var(--offset-orthogonal) 0 var(--ray-size),
+                    calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0 var(--ray-size),
+                    var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size),
+                    calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size),
+                    var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size)
+                  ;
+                  &:hover {
+                    color: hsl(40, 100%, 70%);
+                  }
                 }
               }
             }
