@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 	<head>
 		<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,14 +29,26 @@
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
 
-		<script>		
-			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-				document.querySelector('html').dataset.theme = 'dark';
-				themeToggle.checked = false;
-			} else {
-				document.querySelector('html').dataset.theme = 'light';
-				themeToggle.checked = true;
-			}
+		<script>
+			// if (window.cookie.theme === 'dark') {
+			// 	console.log('dark');
+			// }	else {
+			// 	console.log('light');
+			// }
+			// const getCookieValue = (name) => (
+			// 	document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || ''
+			// )
+			// const cookieV = getCookieValue('theme');
+			// console.log(cookieV)
+			// if (cookieV) {
+			// 	document.querySelector('html').dataset.theme = cookieV === 'light' ? 'light' : 'dark';
+			// }
+			// console.log(document.querySelector('html').dataset.theme)
+				// if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+					// 	document.querySelector('html').dataset.theme = 'dark';
+					// } else {
+					// document.querySelector('html').dataset.theme = 'light';
+			// }
 		</script>
 		
 

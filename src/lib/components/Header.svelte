@@ -3,6 +3,14 @@
   import logo from '$assets/svg/logo.svg'
 
   import { page } from '$app/stores'
+
+  // import { onMount } from 'svelte'
+
+  // $: isLight = true
+
+  // onMount(() => {
+  //   isLight = document.querySelector('html').dataset.theme === 'light'
+  // });
 </script>
 
 
@@ -20,9 +28,9 @@
         <li class="nav-item" class:active={$page.url.pathname == '/contact'}>
           <a href="/contact">Contact</a>
         </li>
-        <li class="toggle-li">
-          <input id="toggle" class="toggle" type="checkbox">
-        </li>
+        <!-- <li class="toggle-li">
+          <input id="toggle" class="toggle" type="checkbox" bind:checked={isLight} >
+        </li> -->
       </ul>
       <Hamburger />
     </nav>
@@ -80,7 +88,7 @@
                 }
               }
             }
-            &.toggle-li {
+            /* &.toggle-li {
               margin-left: 2rem;
               & .toggle {
                 --size: 1.5rem;
@@ -126,7 +134,7 @@
                   }
                 }
               }
-            }
+            } */
           }
         }
       }
@@ -148,7 +156,7 @@
       }
     } */
   }
-  :global(html[data-theme="dark"]) {
+  /* :global(html[data-theme="dark"]) {
     & header {
       & nav {
         & #logo-container {
@@ -158,5 +166,5 @@
         }
       }
     }
-  }
+  } */
 </style>
