@@ -12,7 +12,7 @@
 
     <p>Because I'm not a large-scale web design firm it affords me the ability to give you and your website the attention it deserves. And because I do all of the work myself, from designing to developing, to SEO strategy, even to the copywriting, your site will be built faster and with the focus is deserves.</p>
 
-    <p>You can learn more about me on my <a href="/about/">about page</a>.</p>
+    <p>You can learn more about me on my <a href="/about-arbor/">about page</a>.</p>
   </div>
 </section>
 

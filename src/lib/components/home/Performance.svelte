@@ -70,7 +70,7 @@
       & .grid {
         text-align: center;
         & .item {
-          margin-bottom: 6rem;
+          margin-bottom: 3rem;
           @media (width >= 40em) {
             margin-bottom: 0;
           }

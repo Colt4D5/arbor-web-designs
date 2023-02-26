@@ -21,11 +21,14 @@
 <div id="offcanvas-nav">
   <nav>
     <ul>
-      <li class="nav-item" class:active={$page.url.pathname === '/' && $page.url.hash !== "#about-me"}>
+      <li class="nav-item" class:active={$page.url.pathname === '/'}>
         <a href="/" on:click={toggleMenu}>Home</a>
       </li>
-      <li class="nav-item" class:active={$page.url.hash == '#about-me'}>
+      <li class="nav-item" class:active={$page.url.pathname == '/about-arbor'}>
         <a href="/#about-me" on:click={toggleMenu}>About</a>
+      </li>
+      <li class="nav-item" class:active={$page.url.pathname == '/services'}>
+        <a href="/services">services</a>
       </li>
       <li class="nav-item" class:active={$page.url.pathname == '/contact'}>
         <a href="/contact" on:click={toggleMenu}>Contact</a>

@@ -1,7 +1,8 @@
 <script>
   import Button from '$components/Button.svelte'
   import heroWave from '$assets/svg/hero-wave.svg'
-  import heroWaveDark from '$assets/svg/hero-wave_dark.svg'
+  // import heroWaveDark from '$assets/svg/hero-wave_dark.svg'
+  import heroWaveMobile from '$assets/svg/hero-wave-mobile.svg'
 </script>
 
 <section id="hero">
@@ -11,11 +12,13 @@
     <Button href="/contact">Let's Get Started</Button>
   </div>
   <picture>
+    <source media="(max-width: 799px)" srcset={ heroWaveMobile } />
+    <source media="(min-width: 800px)" srcset={ heroWave } />
     <img class="wave" src={ heroWave } alt="Wave" id="wave" />
   </picture>
-  <picture>
+  <!-- <picture>
     <img class="wave-dark" src={ heroWaveDark } alt="Wave" id="wave-dark" />
-  </picture>
+  </picture> -->
 
   <picture>
     <source media="(max-width: 1023px)" srcset="https://res.cloudinary.com/dgo7sqipz/image/upload/v1675582419/Arbor%20Web%20Designs/mockup_qcl2hf.webp">
@@ -29,6 +32,7 @@
     position: relative;
     padding: 4rem 1rem 2rem;
     background: linear-gradient(145deg, rgba(var(--primary-dark-rgb), 0.9), rgba(var(--primary-dark-rgb), 0.7)), url(https://res.cloudinary.com/dgo7sqipz/image/upload/v1675582419/Arbor%20Web%20Designs/footer-bg-texture_hiflfh.webp);
+    background-size: cover;
     height: 700px;
     & .container {
       padding: 0;
@@ -63,16 +67,17 @@
       }
     }
 
-    & #wave, & #wave-dark {
+    & #wave {
+    /* & #wave, & #wave-dark { */
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
       height: auto;
     }
-    & #wave-dark {
+    /* & #wave-dark {
       display: none;
-    }
+    } */
 
     & #mockup {
       position: relative;
@@ -101,9 +106,9 @@
       & #wave {
         display: none;
       }
-      & #wave-dark {
+      /* & #wave-dark {
         display: block;
-      }
+      } */
     }
   }
 </style>
