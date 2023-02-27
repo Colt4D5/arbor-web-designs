@@ -25,10 +25,10 @@
         <a href="/" on:click={toggleMenu}>Home</a>
       </li>
       <li class="nav-item" class:active={$page.url.pathname == '/about-arbor'}>
-        <a href="/#about-me" on:click={toggleMenu}>About</a>
+        <a href="/about-arbor" on:click={toggleMenu}>About</a>
       </li>
       <li class="nav-item" class:active={$page.url.pathname == '/services'}>
-        <a href="/services">services</a>
+        <a href="/services" on:click={toggleMenu}>Services</a>
       </li>
       <li class="nav-item" class:active={$page.url.pathname == '/contact'}>
         <a href="/contact" on:click={toggleMenu}>Contact</a>

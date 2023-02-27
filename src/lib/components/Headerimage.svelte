@@ -23,7 +23,10 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      
+      min-height: 80px;
+      object-fit: cover;
+      object-position: right;
+      scale: 1.01;
     }
   }
 </style>

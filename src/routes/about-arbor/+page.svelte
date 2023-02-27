@@ -1,7 +1,6 @@
 <script>
 	import Headerimage from "$components/Headerimage.svelte"
 	// import bgImage from '$assets/img/contact-header.webp'
-	import ContactForm from "$components/contact/ContactForm.svelte";
 	import SmallForm from "../../lib/components/about/SmallForm.svelte";
 </script>
 
@@ -17,18 +16,18 @@
 		<div class="top">
 			<div class="left">
 				<h1>about <theme-color>Arbor</theme-color></h1>
-			
+
 				<p>Having a website in today's technological climate is no longer a luxury but a necessity. That's why we've created a solution that takes care of all your website needs, so you can focus on growing your business. Our team of expert designers and developers will work closely with you to bring your vision to life and keep it up to date with the latest design trends and modern technological advancements.</p>
 
 				<p><theme-color>Arbor Web Design</theme-color> is revolutionizing the way businesses approach their online presence. Our innovative subscription model offers a hassle-free and cost-effective solution for companies looking to bring in new customers who were once out of reach.</p>
 			
 				<p>Our subscription model includes:</p>
-					<ul>
-						<li>Custom website design and development</li>
-						<li>Ongoing website maintenance and updates</li>
-						<li>24/7 support and problem resolution</li>
-						<li>Regular website performance optimization</li>
-					</ul>
+				<ul>
+					<li>Custom website design and development</li>
+					<li>Ongoing website maintenance and updates</li>
+					<li>24/7 support and problem resolution</li>
+					<li>Regular website performance optimization</li>
+				</ul>
 			
 				<p>With our subscription model, you can enjoy peace of mind and focus on what's important to your business, knowing that your website is in good hands. No more worrying about unexpected expenses or falling behind on the latest website design trends.
 				Let us help you bring your online presence to the next level. Contact us today to learn more about our innovative subscription model and how it can benefit your business.</p>

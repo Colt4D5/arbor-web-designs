@@ -11,9 +11,12 @@
   <div class="container grid">
     <div class="left">
       <h2 id="offer-title"><theme-color>$0</theme-color> down, <theme-color>{params === 'presale33' ? '$100' : '$150'}</theme-color> per month</h2>
-      <p>Affordable web design services with flexible pricing options. Get a 5-page website for just $150 a month with $0 down. Let me help you create a professional and effective online presence without breaking the bank."</p>
-      <!-- <p>$0 down for a standard 5 page small business website. If you need more than that then we have to do custom pricing based on the scope of work, number of additional pages, and time involved. </p> -->
-      <p>You own your domain, content, listing, and profiles.</p>
+      <p><theme-color>Arbor Web Design</theme-color> services start at just $150 a month, with $0 down, for a 5-page website. With our help, you can create a professional and effective online presence without breaking the bank.
+
+      <p>You own your domain, content, listings, and profiles, which means you have complete control over your online presence and can make changes or updates at any time. <a href="/contact">Contact us today</a> to get started!</p>
+        
+      <!-- <p>Don't settle for a cookie-cutter website that looks like everyone else's. Let us help you create a custom website that stands out from the competition, drives more traffic to your site, and helps you grow your business online. Contact us today to get started!</p> -->
+
     </div>
     <div class="right">
       <div class="item">
@@ -21,7 +24,7 @@
         <p>Secure, reliable, and fast website hosting without added costs.</p>
       </div>
       <div class="item">
-        <h3>Unlimited Edits</h3>
+        <h3>free lifetime edits</h3>
         <p>24-hour turnaround for unlimited edits.</p>
       </div>
       <div class="item">
