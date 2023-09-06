@@ -6,13 +6,12 @@
 <section data-transition="fade-up" use:observer on:enterViewport={fadeUp} id="about" aria-labelledby="about-title">
   <div class="container">
     <h2 id="about-title">about <theme-color>Arbor</theme-color></h2>
-    <p class="highlight">My name is Colton Arthur Allen and I’m a professional web designer and developer located in the Inland Empire, CA.</p>
 
-    <p>I offer an <span style="font-style:italic;">array</span> of web services with a new, more affordable alternative than a traditional web design firm: all the benefits of superior quality, fast turnaround times, and the personal touch with 24/7 customer service, all at an affordable subscription model.</p>
+    <p>I'm Colton Arthur Allen, a professional <b>web designer and developer</b> based in the Inland Empire, CA.</p>
+    
+    <p>I offer an <i>array</i> of web services with superior quality, quick turnaround, and 24/7 customer support through an innovative and affordable subscription model. Unlike large firms — where it's easy to get lost in a forest of clients — I provide personalized attention, handling everything from design and development to SEO and copywriting.</p>
 
-    <p>Because I'm not a large-scale web design firm it affords me the ability to give you and your website the attention it deserves. And because I do all of the work myself, from designing to developing, to SEO strategy, even to the copywriting, your site will be built faster and with the focus is deserves.</p>
-
-    <p>You can learn more about me on my <a href="/about-arbor/">about page</a>.</p>
+    <p>Discover more about me on my <a href="/about-arbor/">about page</a>.</p>
   </div>
 </section>
 
@@ -41,12 +40,7 @@
     }
     & p {
       max-width: 800px;
-      /* line-height: 1.7; */
-      /* font-size: clamp(1em, 3vw, 1.1em); */
       margin: 0 auto 1rem;
-      &.highlight {
-        font-size: clamp(1.25em, 3vw, 1.4em);
-      }
     }
   }
 </style>

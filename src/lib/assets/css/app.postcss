@@ -2,8 +2,10 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 4rem;
-  font-family: "Noto Serif", serif;
+  /* font-family: "Noto Serif", serif; */
+  font-family: "Fira Sans", sans-serif;
   overflow-x: hidden;
+  font-feature-settings:"liga" 0;
   & :is(h1, h2, h3, h4, h5, h6) {
     font-family: 'Montserrat Alternates', sans-serif;
   }
@@ -68,3 +70,14 @@ button.no-styles {
     color: #fff;
   }
 } */
+
+/* ASTERISKS */
+.asterisk {
+  color: var(--secondary);
+  vertical-align: top;
+}
+
+/* TOOLTIPS */
+[data-tooltip]:not(a,button,input) {
+  border-bottom: none;
+}

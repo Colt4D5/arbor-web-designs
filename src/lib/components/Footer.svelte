@@ -11,7 +11,7 @@
         <img src={ logo } alt="Web Designs">
       </a>
       <p>Moreno Valley, CA<br>
-      <a href="tel:+19517560273">951.756.0273</a><br>
+      <a href="tel:+19516307569">951.630.7569</a><br>
       <a href="mailto:info@arborweb.com">info@arborweb.com</a></p>
     </div>
     <div class="footer-col navigation">
@@ -36,6 +36,11 @@
 
         <div class="input-group">
           <input id="email" aria-label="email" class="input1 right" name="email" placeholder="Email Address" type="email" required>
+          <div aria-hidden="true" class="hover-box"></div>
+        </div>
+
+        <div class="input-group">
+          <input id="industry" aria-label="industry" class="input1 right" name="industry" placeholder="Industry" type="text" required>
           <div aria-hidden="true" class="hover-box"></div>
         </div>
 
@@ -143,14 +148,17 @@
         &.contact-form {
           & form {
             margin-top: 1rem;
+            & input {
+              font-size: clamp(0.85rem, 3vw, 1rem);
+              padding: 0.5rem 0.75rem;
+              height: auto;
+            }
             & input:not([type="submit"]) {
-              padding: 0.5rem;
-              /* width: min(100%, 250px); */
               border: 1px solid #ccc;
               border-radius: 1em 0.25em 1em 0.25em;
               background: #fff;
               margin: 0 0 15px;
-              padding: 15px;
+              /* padding: 12px; */
               -webkit-box-sizing: border-box;
               box-sizing: border-box;
             }
@@ -159,7 +167,7 @@
               color: #fff;
               text-transform: lowercase;
               font-family: "Montserrat Alternates", sans-serif;
-              font-size: clamp(1.25rem, 3vw, 1.4rem);
+              font-size: clamp(1.15rem, 3vw, 1.25rem);
               padding: 0.75rem 1rem;
               border: none;
               box-shadow: 4px 3px 6px rgb(0 0 0 / 0.4);

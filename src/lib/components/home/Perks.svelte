@@ -9,7 +9,7 @@
 
 <section id="perks">
   <div class="container">
-    <h2><theme-color>Arbor</theme-color> Offers</h2>
+    <h2><theme-color>Arbor</theme-color> perks</h2>
     <div class="grid container">
       <div class="item">
         <img class="icon" src={ affordableIcon } alt="Affordable Services" />
@@ -29,7 +29,7 @@
       <div class="item">
         <img class="icon" src={ sunsetIcon } alt="Beautiful Designs" />
         <h3>eye-catching design</h3>
-        <p>Make a lasting impression with our stunning and eye-catching website designs that capture the essence of your brand and engages your visitors.</p>
+        <p>Make a lasting impression with our eye-catching website designs that capture the essence of your brand and engages your visitors.</p>
       </div>
       <div class="item">
         <img class="icon" src={ secureIcon } alt="Secure Websites" />
