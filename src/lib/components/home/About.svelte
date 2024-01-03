@@ -11,7 +11,7 @@
     
     <p>I offer an <i>array</i> of web services with superior quality, quick turnaround, and 24/7 customer support through an innovative and affordable subscription model. Unlike large firms — where it's easy to get lost in a forest of clients — I provide personalized attention, handling everything from design and development to SEO and copywriting.</p>
 
-    <p>Discover more about me on my <a href="/about-arbor/">about page</a>.</p>
+    <!-- <p>Discover more about me on my <a href="/about-arbor/">about page</a>.</p> -->
   </div>
 </section>
 
@@ -37,6 +37,9 @@
       width: 16rem;
       transform: scaleX(-100%);
       opacity: 0.1;
+    }
+    & .container {
+      margin-bottom: 6rem;
     }
     & p {
       max-width: 800px;

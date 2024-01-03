@@ -12,7 +12,7 @@
       </a>
       <p>Moreno Valley, CA<br>
       <a href="tel:+19516307569">951.630.7569</a><br>
-      <a href="mailto:info@arborweb.com">info@arborweb.com</a></p>
+      <a href="mailto:info@arborwebdesign.com">info@arborwebdesign.com</a></p>
     </div>
     <div class="footer-col navigation">
       <h2>navigation</h2>
@@ -28,7 +28,7 @@
     <div class="footer-col contact-form">
       <h2>contact us</h2>
 
-      <form id="contact" name="contact" method="post" data-netlify="true">
+      <form id="contact" name="Footer Contact" method="POST" data-netlify="true">
         <div class="input-group">
           <input id="name" aria-label="name" class="input1" name="name" placeholder="Full Name" type="text" required>
           <div aria-hidden="true" class="hover-box"></div>
