@@ -10,9 +10,11 @@
 	import Performance from "$components/home/Performance.svelte"
 	import Spacer from '$components/Spacer.svelte';
 
+	import {page} from '$app/stores';
+
   let promoCode = null;
   beforeUpdate(() => {
-    promoCode =  url.searchParams.get('promo') || null;
+    promoCode =  $page.url.searchParams.get('promo') || null;
   });
 </script>
 
