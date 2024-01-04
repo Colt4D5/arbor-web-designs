@@ -1,4 +1,6 @@
 <script>
+	import { beforeUpdate } from 'svelte';
+
 	import Pricing from '$components/home/Pricing.svelte';
 	import About from '$components/home/About.svelte';
 	import Hero from "$components/home/Hero.svelte";
@@ -8,7 +10,10 @@
 	import Performance from "$components/home/Performance.svelte"
 	import Spacer from '$components/Spacer.svelte';
 
-  export let data
+  let promoCode = null;
+  beforeUpdate(() => {
+    promoCode =  url.searchParams.get('promo') || null;
+  });
 </script>
 
 <svelte:head>
@@ -20,7 +25,7 @@
 <Perks />
 <Spacer />
 <Performance />
-<Offer params={data.params} />
+<Offer params={promoCode} />
 <Spacer />
 <About />
 <Pricing />
