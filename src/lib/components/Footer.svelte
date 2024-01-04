@@ -28,7 +28,10 @@
     <div class="footer-col contact-form">
       <h2>contact us</h2>
 
-      <form id="contact" name="Footer Contact" method="POST" data-netlify="true">
+      <form id="contact" name="footer-contact-form" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+
+        <input type="hidden" name="form-name" value="footer-contact-form" />
+
         <div class="input-group">
           <input id="name" aria-label="name" class="input1" name="name" placeholder="Full Name" type="text" required>
           <div aria-hidden="true" class="hover-box"></div>

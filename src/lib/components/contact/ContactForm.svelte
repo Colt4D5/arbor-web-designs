@@ -1,6 +1,9 @@
 <section id="contact-form">
   <div class="container">
-    <form id="contact" name="Contact Page Form" method="post" data-netlify="true">
+    <form id="contact" name="contact-page-form" method="post" netlify-honeypot="bot-field" data-netlify="true">
+
+      <input type="hidden" name="form-name" value="contact-page-form" />
+      
       <div class="input-group">
           <label for="name">Full Name</label>
           <input id="name" aria-label="name" class="input1" name="name" placeholder="Full Name" type="text" required>
