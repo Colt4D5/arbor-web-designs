@@ -30,6 +30,11 @@ const config = {
 		})
 	],
 
+  prerender: {
+    crawl: false,
+    entries: ['/', '/blog', '/blog/high-performance-website', '/blog/slow-equals-low-traffic']
+  }
+
 	// vitePlugin: {
   //   experimental: {
   //     inspector: {
