@@ -13,7 +13,6 @@ const config = {
 				'media-query-ranges': true
 			}
 		}),
-		autoprefixer
 	]
 };
 
