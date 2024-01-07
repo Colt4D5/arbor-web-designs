@@ -1,5 +1,4 @@
 <script>
-  import {	goto } from '$app/navigation';
   import SvelteMarkdown from 'svelte-markdown';
   import post1 from '$blogPosts/high-performance-website.md?raw';
   import post2 from '$blogPosts/slow-equals-low-traffic.md?raw';
