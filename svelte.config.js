@@ -20,6 +20,7 @@ const config = {
 			$assets: path.resolve('./src/lib/assets'),
 			$css: path.resolve('./src/lib/assets/css'),
 			$utils: path.resolve('./src/lib/utils'),
+			$blogPosts: path.resolve('./src/lib/blog-posts'),
 		}
 	},
 
@@ -29,18 +30,18 @@ const config = {
 		})
 	],
 
-	vitePlugin: {
-    experimental: {
-      inspector: {
-        // change shortcut
-        toggleKeyCombo: 'meta-shift',
-        // hold and release key to toggle inspector mode 
-        holdMode: true,
-        // inspector position
-        toggleButtonPos: 'top-right',
-      },
-    },
-	},
+	// vitePlugin: {
+  //   experimental: {
+  //     inspector: {
+  //       // change shortcut
+  //       toggleKeyCombo: 'meta-shift',
+  //       // hold and release key to toggle inspector mode 
+  //       holdMode: true,
+  //       // inspector position
+  //       toggleButtonPos: 'top-right',
+  //     },
+  //   },
+	// },
 };
 
 export default config;

@@ -28,6 +28,9 @@
         <li class="nav-item" class:active={$page.url.pathname == '/services'}>
           <a href="/services">Services</a>
         </li>
+        <!-- <li class="nav-item" class:active={$page.url.pathname == '/blog'}>
+          <a href="/blog">Blog</a>
+        </li> -->
         <li class="nav-item" class:active={$page.url.pathname == '/contact'}>
           <a href="/contact">Contact</a>
         </li>

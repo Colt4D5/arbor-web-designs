@@ -14,7 +14,7 @@
 	// onMount(() => {
 	// 	const themeToggle = document.querySelector('input.toggle');
 
-		
+
 
 	// 	// set theme cookie
 	// 	function checkCookie(cname, exdays) {
@@ -66,10 +66,14 @@
 
 </script>
 
-<Header />
+<Header></Header>
+
 <main id="main">
-	<slot />
+	<slot></slot>
 </main>
-<Footer />
-<OffcanvasNav />
-<ToTopBtn />
+
+<Footer></Footer>
+
+<OffcanvasNav></OffcanvasNav>
+
+<ToTopBtn></ToTopBtn>
