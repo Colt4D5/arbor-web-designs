@@ -1,6 +1,5 @@
 <script>
   let y
-  console.log(y);
 </script>
 
 <a class:isScrolled={y > 800} class="button to-top-btn" href="#header">Top</a>

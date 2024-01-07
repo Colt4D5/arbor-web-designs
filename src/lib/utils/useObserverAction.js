@@ -31,8 +31,6 @@ export default function useObserverAction(element) {
 	
 	intersectionObserver.observe(element);
 
-	console.log(element);
-
 	return {
 		destroy() {
 			intersectionObserver.unobserve(element);
