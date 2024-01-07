@@ -1,4 +1,5 @@
 <script>
+	import { browser } from '$app/environment';
 	import { beforeUpdate } from 'svelte';
 
 	import Pricing from '$components/home/Pricing.svelte';
@@ -13,9 +14,11 @@
 	import {page} from '$app/stores';
 
   let promoCode = null;
-  beforeUpdate(() => {
-    promoCode =  $page.url.searchParams.get('promo') || null;
-  });
+	if (browser) {
+		promoCode =  $page.url.searchParams.get('promo') || null;
+	}
+  // beforeUpdate(() => {
+  // });
 </script>
 
 <svelte:head>

@@ -1,8 +1,8 @@
 <script>
   export let params
 
-  import observer from '$utils/useObserverAction';
-  import { fadeUp } from '$utils/useObserverAction';
+  import observer, { fadeUp } from '$utils/useObserverAction';
+  // import { fadeUp } from '$utils/useObserverAction';
 
   import checkmark from '$assets/svg/checkmark.svg'
 </script>

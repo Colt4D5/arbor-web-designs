@@ -1,30 +1,24 @@
 import { error } from '@sveltejs/kit'
 
-export const load = async () => {
-  const postInfo = [
-    {
-      uid: 1,
-      slug: 'high-performance-website'
-    },
-    {
-      uid: 2,
-      slug: 'slow-equals-low-traffic'
-    },
-  ]
+export const load = async ({ fetch }) => {
+
+  const postData = await fetch('api/posts');
+  const postInfo = await postData.json();
 
   const posts = []
 
 	try {	
-    // postInfo.forEach(post => {
-    //   posts.push(import(`../../../lib/blog-posts/${post.slug}.md?raw`))
-    // })
     
-    for await (const [i, post] of postInfo.entries()) {
+    for await (const [i, post] of postInfo.posts.entries()) {
       const p = await import(`../../lib/blog-posts/${post.slug}.md?raw`)
-      posts.push({ uid: i + 1, slug: post.slug, postContent: p.default })
+      posts.push({ 
+        id: i + 1, 
+        slug: post.slug, 
+        title: post.title,
+        teaser: post.teaser,
+        postContent: p.default,
+      })
     }
-
-    console.log(posts);
 
 		return {
 			posts,
