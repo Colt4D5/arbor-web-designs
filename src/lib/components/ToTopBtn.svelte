@@ -1,5 +1,5 @@
 <script>
-  let y
+  let y = $state()
 </script>
 
 <a class:isScrolled={y > 800} class="button to-top-btn" href="#header">Top</a>

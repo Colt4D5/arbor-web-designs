@@ -4,10 +4,10 @@
   }
 </script>
 
-<!-- svelte-ignore a11y-no-redundant-roles -->
+<!-- svelte-ignore a11y_no_redundant_roles -->
 <ul id="hamburger" class="hide-for-large">
   <li>
-    <button on:click={toggleMobileMenu} role="button">
+    <button onclick={toggleMobileMenu} role="button">
       <div class="bar top"></div>
       <div class="bar mid"></div>
       <div class="bar bot"></div>

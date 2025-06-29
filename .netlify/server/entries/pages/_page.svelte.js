@@ -1,242 +1,97 @@
-import { c as create_ssr_component, e as escape, n as null_to_empty, b as add_attribute, v as validate_component, s as subscribe } from "../../chunks/index.js";
-import { p as page } from "../../chunks/stores.js";
-const Button_svelte_svelte_type_style_lang = "";
-const css$7 = {
-  code: "a.button.svelte-k9shsh{display:inline-block;padding:1em 2em;background-color:var(--secondary);text-transform:uppercase;color:#fff;border-radius:0.25em;margin-top:0.5em;font-size:1.1rem;font-weight:500;border-radius:2rem 0 2rem 0;border:none;box-shadow:rgba(0, 0, 0, 0.25) 0px 15px 25px, rgba(0, 0, 0, 0.1) 0px 5px 10px;font-family:'Montserrat Alternates', sans-serif;text-transform:lowercase;transition:color 0.3s ease,\n                background 0.3s ease,\n                border 0.3s ease}a.button.svelte-k9shsh:hover{background:var(--secondary-hover)}a.button.secondary.svelte-k9shsh{background-color:#fff;color:var(--secondary);border:3px solid var(--secondary)}a.button.secondary.svelte-k9shsh:hover{background-color:var(--secondary);color:#fff}",
-  map: null
-};
-const Button = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { href } = $$props;
-  let { classes = "" } = $$props;
-  if ($$props.href === void 0 && $$bindings.href && href !== void 0)
-    $$bindings.href(href);
-  if ($$props.classes === void 0 && $$bindings.classes && classes !== void 0)
-    $$bindings.classes(classes);
-  $$result.css.add(css$7);
-  return `<a class="${escape(null_to_empty(classes === "" ? "button" : `button ${classes}`), true) + " svelte-k9shsh"}"${add_attribute("href", href, 0)} role="button">${slots.default ? slots.default({}) : ``}
-</a>`;
-});
-const Pricing_svelte_svelte_type_style_lang = "";
-const css$6 = {
-  code: "#price-cards.svelte-1hdktch.svelte-1hdktch{margin-bottom:8rem;position:relative;z-index:2}#price-cards.svelte-1hdktch .container.svelte-1hdktch{text-align:center}#price-cards.svelte-1hdktch .container h2.svelte-1hdktch{margin-bottom:4rem}#price-cards.svelte-1hdktch .container .pricing-card.svelte-1hdktch{width:min(80%, 325px);margin:10px;margin-top:10px;background-color:#fff;box-shadow:5px 5px 12px #22222244;text-align:center;border-radius:0.5rem;display:inline-block;vertical-align:top;position:relative}#price-cards.svelte-1hdktch .container .pricing-card.most-popular.svelte-1hdktch{z-index:9}#price-cards.svelte-1hdktch .container .pricing-card.most-popular .card-heading h3.svelte-1hdktch{color:var(--light)}#price-cards.svelte-1hdktch .container .pricing-card.most-popular.svelte-1hdktch::after{content:'Most Popular';position:absolute;left:50%;top:0.5rem;transform:translate(-50%, -50%);background-color:var(--secondary);color:#fff;padding:0.15rem 1.5rem 0.75rem;white-space:nowrap;-webkit-clip-path:polygon(0 0, 100% 0, 90% 75%, 50% 100%, 10% 75%);clip-path:polygon(0 0, 100% 0, 90% 75%, 50% 100%, 10% 75%);z-index:2;border-radius:0.15rem 0.15rem 0 0}#price-cards.svelte-1hdktch .container .pricing-card.most-popular.svelte-1hdktch::before{content:'Most Popular';position:absolute;left:50%;top:0.5rem;transform:translate(-50%, -50%);background-color:var(--secondary);color:#fff;padding:0.15rem 1.5rem 0.75rem;white-space:nowrap;z-index:-1;filter:brightness(0.6);border-radius:0.15rem 0.15rem 0 0}#price-cards.svelte-1hdktch .container .pricing-card .card-heading.svelte-1hdktch{border-radius:0.5rem 0.5rem 0 0;background-color:#e5e5e5;min-height:5rem;padding:0.5rem;display:flex;justify-content:center;align-items:center;margin:0;font-weight:400;line-height:1.2}#price-cards.svelte-1hdktch .container .pricing-card .card-heading h3.svelte-1hdktch{margin-bottom:0}#price-cards.svelte-1hdktch .container .pricing-card .card-heading.active.svelte-1hdktch{background-color:var(--primary);color:#fff}#price-cards.svelte-1hdktch .container .pricing-card .pricing-card-contents.svelte-1hdktch{padding:1.5rem 1.5rem 1.5rem;min-height:300px;position:relative}#price-cards.svelte-1hdktch .container .pricing-card .pricing-card-contents h4.svelte-1hdktch{margin-bottom:1em;font-size:1.5em;line-height:1.1}#price-cards.svelte-1hdktch .container .pricing-card .pricing-card-contents h4 small.svelte-1hdktch{font-size:80%;font-weight:400}#price-cards.svelte-1hdktch .container .pricing-card .pricing-card-contents ul.svelte-1hdktch{list-style:none;margin:0.75rem 0 2rem;padding:0}#price-cards.svelte-1hdktch .container .pricing-card .pricing-card-contents ul li.svelte-1hdktch{list-style:none;margin:5px 0;font-size:1rem}@media screen and (min-width: 40em){#price-cards.svelte-1hdktch.svelte-1hdktch{margin-bottom:4rem}#price-cards.svelte-1hdktch .container .pricing-card.svelte-1hdktch:nth-child(3){scale:1.2}#price-cards.svelte-1hdktch .container .pricing-card:nth-child(3) ul li.svelte-1hdktch{font-size:0.9rem}}",
-  map: null
-};
-const Pricing = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$6);
-  return `<section data-transition="fade-up" id="price-cards" class="svelte-1hdktch">
-  <div class="container svelte-1hdktch"><h2 class="svelte-1hdktch">pricing</h2>
-    <div class="pricing-card svelte-1hdktch"><div class="card-heading svelte-1hdktch"><h3 class="svelte-1hdktch">Up Front<span style="font-size:0.75em;" class="asterisk" data-tooltip="price may vary by features">*</span></h3></div>
-      <div class="pricing-card-contents svelte-1hdktch"><h4 class="svelte-1hdktch"><small class="svelte-1hdktch">Starts at</small><br>$2,195<span style="font-size:0.75em;" class="asterisk" data-tooltip="+ $25 monthly hosting fee">*</span></h4>
-        <ul class="svelte-1hdktch"><li class="svelte-1hdktch">Website design/build</li>
-          <li class="svelte-1hdktch">Mobile Responsive</li>
-          <li class="svelte-1hdktch">Fast &amp; secure</li>
-          <li class="svelte-1hdktch">Custom coded</li>
-          <li class="svelte-1hdktch">Logo creation</li></ul>
-        ${validate_component(Button, "Button").$$render(
-    $$result,
-    {
-      href: "/services",
-      classes: "secondary cta"
-    },
-    {},
-    {
-      default: () => {
-        return `Learn More`;
-      }
+import { d as attr_class, c as attr, f as clsx, e as escape_html, h as head, p as pop, a as push } from "../../chunks/index2.js";
+import "clsx";
+import "../../chunks/client.js";
+function Button($$payload, $$props) {
+  let { href, classes = "", children } = $$props;
+  $$payload.out += `<a${attr_class(clsx(classes === "" ? "button" : `button ${classes}`), "svelte-k9shsh")}${attr("href", href)} role="button">`;
+  children?.($$payload);
+  $$payload.out += `<!----></a>`;
+}
+function Pricing($$payload) {
+  $$payload.out += `<section data-transition="fade-up" id="price-cards" class="svelte-34149l"><div class="container svelte-34149l"><h2 class="svelte-34149l">pricing</h2> <div class="pricing-card svelte-34149l"><div class="card-heading svelte-34149l"><h3 class="svelte-34149l">Up Front<span style="font-size:0.75em;" class="asterisk" data-tooltip="price may vary by features">*</span></h3></div> <div class="pricing-card-contents svelte-34149l"><h4 class="svelte-34149l"><small class="svelte-34149l">Starts at</small><br/>$2,195<span style="font-size:0.75em;" class="asterisk" data-tooltip="+ $25 monthly hosting fee">*</span></h4> <ul class="svelte-34149l"><li class="svelte-34149l">Website design/build</li> <li class="svelte-34149l">Mobile Responsive</li> <li class="svelte-34149l">Fast &amp; secure</li> <li class="svelte-34149l">Custom coded</li> <li class="svelte-34149l">Logo creation</li></ul> `;
+  Button($$payload, {
+    href: "/services",
+    classes: "secondary cta",
+    children: ($$payload2) => {
+      $$payload2.out += `<!---->Learn More`;
     }
-  )}</div></div>
-    
-    <div class="pricing-card most-popular svelte-1hdktch"><div class="card-heading active svelte-1hdktch"><h3 class="svelte-1hdktch">Subscription</h3></div>
-      <div class="pricing-card-contents svelte-1hdktch"><h4 class="svelte-1hdktch">$150/mo<span style="font-size: 0.75em;" class="asterisk" data-tooltip="price may vary by features">*</span></h4>
-        <ul class="svelte-1hdktch"><li class="svelte-1hdktch">$0 down</li>
-          <li class="svelte-1hdktch">Unlimited Edits<span class="asterisk" data-tooltip="Content edits, structure edits vary">*</span></li>
-          <li class="svelte-1hdktch">Up to 5 pages</li>
-          <li class="svelte-1hdktch">Search Engine Optimized</li>
-          <li class="svelte-1hdktch">Google Analytics</li>
-          <li class="svelte-1hdktch">24/7 technical support</li></ul>
-        ${validate_component(Button, "Button").$$render($$result, { href: "/services", classes: "cta" }, {}, {
-    default: () => {
-      return `Learn More`;
+  });
+  $$payload.out += `<!----></div></div> <div class="pricing-card most-popular svelte-34149l"><div class="card-heading active svelte-34149l"><h3 class="svelte-34149l">Subscription</h3></div> <div class="pricing-card-contents svelte-34149l"><h4 class="svelte-34149l">$150/mo<span style="font-size: 0.75em;" class="asterisk" data-tooltip="price may vary by features">*</span></h4> <ul class="svelte-34149l"><li class="svelte-34149l">$0 down</li> <li class="svelte-34149l">Unlimited Edits<span class="asterisk" data-tooltip="Content edits, structure edits vary">*</span></li> <li class="svelte-34149l">Up to 5 pages</li> <li class="svelte-34149l">Search Engine Optimized</li> <li class="svelte-34149l">Google Analytics</li> <li class="svelte-34149l">24/7 technical support</li></ul> `;
+  Button($$payload, {
+    href: "/services",
+    classes: "cta",
+    children: ($$payload2) => {
+      $$payload2.out += `<!---->Learn More`;
     }
-  })}</div></div>
-    
-    <div class="pricing-card svelte-1hdktch"><div class="card-heading svelte-1hdktch"><h3 class="svelte-1hdktch">Premium <br>Subscription<span style="font-size: 0.75em;" class="asterisk" data-tooltip="price may vary by features">*</span></h3></div>
-      <div class="pricing-card-contents svelte-1hdktch"><h4 class="svelte-1hdktch">$300/mo</h4>
-        <ul class="svelte-1hdktch"><li class="svelte-1hdktch">1,000+ word blog post</li>
-          <li class="svelte-1hdktch">Up to 8 pages</li>
-          <li class="svelte-1hdktch">Premium animations</li>
-          <li class="svelte-1hdktch">Custom Analytics &amp; Reporting</li>
-          <li class="svelte-1hdktch">Keyword Research</li></ul>
-        ${validate_component(Button, "Button").$$render(
-    $$result,
-    {
-      href: "/services",
-      classes: "secondary cta"
-    },
-    {},
-    {
-      default: () => {
-        return `Learn More`;
-      }
+  });
+  $$payload.out += `<!----></div></div> <div class="pricing-card svelte-34149l"><div class="card-heading svelte-34149l"><h3 class="svelte-34149l">Premium <br/>Subscription<span style="font-size: 0.75em;" class="asterisk" data-tooltip="price may vary by features">*</span></h3></div> <div class="pricing-card-contents svelte-34149l"><h4 class="svelte-34149l">$300/mo</h4> <ul class="svelte-34149l"><li class="svelte-34149l">1,000+ word blog post</li> <li class="svelte-34149l">Up to 8 pages</li> <li class="svelte-34149l">Premium animations</li> <li class="svelte-34149l">Custom Analytics &amp; Reporting</li> <li class="svelte-34149l">Keyword Research</li></ul> `;
+  Button($$payload, {
+    href: "/services",
+    classes: "secondary cta",
+    children: ($$payload2) => {
+      $$payload2.out += `<!---->Learn More`;
     }
-  )}</div></div></div>
-</section>`;
-});
-const About_svelte_svelte_type_style_lang = "";
-const css$5 = {
-  code: "#about.svelte-1dhrwv.svelte-1dhrwv{text-align:center;margin-bottom:8rem;position:relative;overflow-x:hidden}#about.svelte-1dhrwv.svelte-1dhrwv::before{content:url(../../assets/svg/bg-leaves.svg);position:absolute;left:-2rem;bottom:0;width:12rem;opacity:0.1}#about.svelte-1dhrwv.svelte-1dhrwv::after{content:url(../../assets/svg/bg-leaves.svg);position:absolute;right:-2rem;top:0;width:16rem;transform:scaleX(-100%);opacity:0.1}#about.svelte-1dhrwv .container.svelte-1dhrwv{margin-bottom:6rem}#about.svelte-1dhrwv p.svelte-1dhrwv{max-width:800px;margin:0 auto 1rem}",
-  map: null
-};
-const About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$5);
-  return `<section data-transition="fade-up" id="about" aria-labelledby="about-title" class="svelte-1dhrwv"><div class="container svelte-1dhrwv"><h2 id="about-title">about <theme-color>Arbor</theme-color></h2>
-
-    <p class="svelte-1dhrwv">I&#39;m Colton Arthur Allen, a professional <b>web designer and developer</b> based in the Inland Empire, CA.</p>
-    
-    <p class="svelte-1dhrwv">I offer an <i>array</i> of web services with superior quality, quick turnaround, and 24/7 customer support through an innovative and affordable subscription model. Unlike large firms — where it&#39;s easy to get lost in a forest of clients — I provide personalized attention, handling everything from design and development to SEO and copywriting.</p>
-
-    </div>
-</section>`;
-});
-const heroWave = "/_app/immutable/assets/hero-wave.b67f4ac6.svg";
-const heroWaveMobile = "/_app/immutable/assets/hero-wave-mobile.1bd6d023.svg";
-const Hero_svelte_svelte_type_style_lang = "";
-const css$4 = {
-  code: '#hero.svelte-15dz5ek.svelte-15dz5ek{position:relative;padding:4rem 1rem 2rem;background:linear-gradient(145deg, rgba(var(--primary-dark-rgb), 0.9), rgba(var(--primary-dark-rgb), 0.7)), url(https://res.cloudinary.com/dgo7sqipz/image/upload/v1675582419/Arbor%20Web%20Designs/footer-bg-texture_hiflfh.webp);background-size:cover;height:700px}#hero.svelte-15dz5ek .container.svelte-15dz5ek{padding:0;color:#fff;margin-top:125px;margin-bottom:3rem;position:relative;width:min(90%, 1200px);z-index:3}#hero.svelte-15dz5ek .container h1.svelte-15dz5ek{width:min(95%, 500px);margin-bottom:1rem;font-size:clamp(1.75rem, 5vw, 3rem);font-weight:700;line-height:1.2;color:#fff}#hero.svelte-15dz5ek .container p.svelte-15dz5ek{width:min(95%, 500px);margin-bottom:1rem;color:#fff}#hero.svelte-15dz5ek .container.svelte-15dz5ek .button{background-color:#fff;color:var(--secondary);border:none;box-shadow:4px 8px 8px rgb(0 0 0 / 0.2)}#hero.svelte-15dz5ek .container.svelte-15dz5ek .button:hover{background-color:var(--secondary);color:#fff}#hero.svelte-15dz5ek #wave.svelte-15dz5ek{position:absolute;bottom:0;left:0;width:100%;height:auto}#hero.svelte-15dz5ek #mockup.svelte-15dz5ek{position:relative;z-index:2}@media screen and (min-width: 64em){#hero.svelte-15dz5ek.svelte-15dz5ek{height:900px;padding-top:100px;margin-bottom:6rem;padding-bottom:0}#hero.svelte-15dz5ek #mockup.svelte-15dz5ek{position:absolute;right:14vw;top:60%;width:clamp(500px, 50vw, 700px);transform:translateY(-50%)}}html[data-theme="dark"] #hero.svelte-15dz5ek.svelte-15dz5ek{background:linear-gradient(145deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../assets/img/hero-dark.webp);background-size:cover;background-position:center}html[data-theme="dark"] #hero.svelte-15dz5ek #wave.svelte-15dz5ek{display:none}',
-  map: null
-};
-const Hero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$4);
-  return `<section id="hero" class="svelte-15dz5ek"><div class="container svelte-15dz5ek"><h1 class="svelte-15dz5ek">web design &amp; development</h1>
-    <p class="svelte-15dz5ek">Where <strong>beautiful design</strong> and top-tier <strong>performance</strong> is grafted together to get you in front of your clients, all for only <strong>$150/mo</strong> and <strong>$0 down</strong>.</p>
-    ${validate_component(Button, "Button").$$render($$result, { href: "/contact" }, {}, {
-    default: () => {
-      return `Let&#39;s Get Started`;
+  });
+  $$payload.out += `<!----></div></div></div></section>`;
+}
+function About($$payload) {
+  $$payload.out += `<section data-transition="fade-up" id="about" aria-labelledby="about-title" class="svelte-1dhrwv"><div class="container svelte-1dhrwv"><h2 id="about-title">about <theme-color>Arbor</theme-color></h2> <p class="svelte-1dhrwv">I'm Colton Arthur Allen, a professional <b>web designer and developer</b> based in the Inland Empire, CA.</p> <p class="svelte-1dhrwv">I offer an <i>array</i> of web services with superior quality, quick turnaround, and 24/7 customer support through an innovative and affordable subscription model. Unlike large firms — where it's easy to get lost in a forest of clients — I provide personalized attention, handling everything from design and development to SEO and copywriting.</p></div></section>`;
+}
+const heroWave = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Layer_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%20332.77'%3e%3cdefs%3e%3cstyle%3e.cls-1{fill:%23fff;}%3c/style%3e%3c/defs%3e%3cg%20id='Wave'%3e%3cpath%20class='cls-1'%20d='m1920,0v332.77H0V101.56c28.96,8.79,65.48,18.22,112,28.21,268.96,57.74,377.34,27.82,602,66,237.15,40.3,190.61,92.66,353,99,177.59,6.93,373.95-118.98,544.21-196.33-18.4,15.46-50.89,46.84-57.22,80.26-8.93,47.15,12.18,85.54,57.98,127.37,8.45,7.71,19.75,19.7,19.75,19.7,0,0,38.13-63.7,53.77-112.14,3.99,1.94,8.23,3.58,12.74,4.87,56.94,16.25,166.79,10.95,166.79,10.95,0,0-6.2-18.49-9.54-31.62-18.08-71.15-46.37-114.63-100.58-131.64-19.27-6.04-41.67-4.93-62.55-.98,84.07-29.89,162.92-46.75,227.65-65.21Z'/%3e%3c/g%3e%3c/svg%3e";
+const heroWaveMobile = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Layer_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20375%20146.96'%3e%3cdefs%3e%3cstyle%3e.cls-1{fill:%23fff;}%3c/style%3e%3c/defs%3e%3cg%20id='Mobile_Wave'%3e%3cg%20id='Wave'%3e%3cpath%20class='cls-1'%20d='m375,7.81v139.15H0V0c.87,7.85,22,41.95,26.73,53.81,6.05,15.15,24.94,46.89,41.06,58.25,14.1,9.94,35.51,22.83,89.92,25.22,45.23,1.99,95.26-30.31,138.63-50.01-4.69,3.94-12.96,11.93-14.58,20.44-2.27,12.01,3.1,21.79,14.77,32.45,2.15,1.96,5.03,5.02,5.03,5.02,0,0,9.71-16.23,13.7-28.57,1.02.49,2.1.91,3.25,1.24,14.5,4.14,42.49,2.79,42.49,2.79,0,0-1.58-4.71-2.43-8.05-4.61-18.12-11.81-29.2-25.62-33.53-4.91-1.54-10.61-1.26-15.93-.25,21.42-7.61,41.5-66.29,57.99-70.99h0Z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e";
+function Hero($$payload) {
+  $$payload.out += `<section id="hero" class="svelte-15dz5ek"><div class="container svelte-15dz5ek"><h1 class="svelte-15dz5ek">web design &amp; development</h1> <p class="svelte-15dz5ek">Where <strong>beautiful design</strong> and top-tier <strong>performance</strong> is grafted together to get you in front of your clients, all for only <strong>$150/mo</strong> and <strong>$0 down</strong>.</p> `;
+  Button($$payload, {
+    href: "/contact",
+    children: ($$payload2) => {
+      $$payload2.out += `<!---->Let's Get Started`;
     }
-  })}</div>
-  <picture><source media="(max-width: 799px)"${add_attribute("srcset", heroWaveMobile, 0)}>
-    <source media="(min-width: 800px)"${add_attribute("srcset", heroWave, 0)}>
-    <img class="wave svelte-15dz5ek"${add_attribute("src", heroWave, 0)} alt="Wave" id="wave"></picture>
-  
-
-  <picture><source media="(max-width: 1023px)" srcset="https://res.cloudinary.com/dgo7sqipz/image/upload/v1675582419/Arbor%20Web%20Designs/mockup_qcl2hf.webp">
-    <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dgo7sqipz/image/upload/v1675582419/Arbor%20Web%20Designs/mockup_qcl2hf.webp">
-    <img src="https://res.cloudinary.com/dgo7sqipz/image/upload/v1675582419/Arbor%20Web%20Designs/mockup_qcl2hf.webp" alt="Web Mockups" id="mockup" class="svelte-15dz5ek"></picture>
-</section>`;
-});
-const affordableIcon = "/_app/immutable/assets/affordable.7aa44ee1.svg";
-const speedIcon = "/_app/immutable/assets/speedometer.281e6908.svg";
-const seoIcon = "/_app/immutable/assets/seo.5d76bd7a.svg";
-const sunsetIcon = "/_app/immutable/assets/sunset.19865284.svg";
-const secureIcon = "/_app/immutable/assets/secure.b23755ed.svg";
-const accessibleIcon = "/_app/immutable/assets/accessible.c8b1a985.svg";
-const Perks_svelte_svelte_type_style_lang = "";
-const css$3 = {
-  code: "#perks.svelte-1h7eht0.svelte-1h7eht0{text-align:center;margin-bottom:8rem}#perks.svelte-1h7eht0 .grid.svelte-1h7eht0{grid-row-gap:3rem}@media(min-width: 40em){#perks.svelte-1h7eht0 .grid.svelte-1h7eht0{grid-template-columns:repeat(2,minmax(0%,1fr))}}@media(min-width: 64em){#perks.svelte-1h7eht0 .grid.svelte-1h7eht0{grid-template-columns:repeat(3,minmax(0%,1fr))}}#perks.svelte-1h7eht0 .grid .item.svelte-1h7eht0{text-align:center}#perks.svelte-1h7eht0 .grid .item .icon.svelte-1h7eht0{display:block;margin-inline:auto}#perks.svelte-1h7eht0 .grid .item h3.svelte-1h7eht0{font-size:1.25rem;font-weight:400;margin-bottom:1em;display:inline-block;position:relative}#perks.svelte-1h7eht0 .grid .item h3.svelte-1h7eht0::before{content:'';background-image:url(../../assets/svg/bg-leaves.svg);position:absolute;top:0;left:0;width:32px;aspect-ratio:202 / 221;transform:translate(-75%, -25%) scaleX(-100%);z-index:-1;opacity:0.5}",
-  map: null
-};
-const Perks = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$3);
-  return `<section id="perks" class="svelte-1h7eht0"><div class="container"><h2><theme-color>Arbor</theme-color> perks</h2>
-    <div class="grid container svelte-1h7eht0"><div class="item svelte-1h7eht0"><img class="icon svelte-1h7eht0"${add_attribute("src", affordableIcon, 0)} alt="Affordable Services">
-        <h3 class="svelte-1h7eht0">affordable</h3>
-        <p>Introducing an affordable subscription model that simplifies website management at a budget-friendly price.</p></div>
-      <div class="item svelte-1h7eht0"><img class="icon svelte-1h7eht0"${add_attribute("src", speedIcon, 0)} alt="Performance Driven">
-        <h3 class="svelte-1h7eht0">performance-drive</h3>
-        <p>Lightning-fast website performance fine-tuned with our advanced optimization techniques to ensure maximum speed and responsiveness.</p></div>
-      <div class="item svelte-1h7eht0"><img class="icon svelte-1h7eht0"${add_attribute("src", seoIcon, 0)} alt="Search Engine Optimized">
-        <h3 class="svelte-1h7eht0">search optimization</h3>
-        <p>Boost your website&#39;s visibility and drive more traffic with our targeted SEO services to identify effective keywords.</p></div>
-      <div class="item svelte-1h7eht0"><img class="icon svelte-1h7eht0"${add_attribute("src", sunsetIcon, 0)} alt="Beautiful Designs">
-        <h3 class="svelte-1h7eht0">eye-catching design</h3>
-        <p>Make a lasting impression with our eye-catching website designs that capture the essence of your brand and engages your visitors.</p></div>
-      <div class="item svelte-1h7eht0"><img class="icon svelte-1h7eht0"${add_attribute("src", secureIcon, 0)} alt="Secure Websites">
-        <h3 class="svelte-1h7eht0">secure hosting</h3>
-        <p>Rest easy with our secure static website hosting, making it virtually impossible for attackers to compromise your site.</p></div>
-      <div class="item svelte-1h7eht0"><img class="icon svelte-1h7eht0"${add_attribute("src", accessibleIcon, 0)} alt="ADA Compliant">
-        <h3 class="svelte-1h7eht0">ada-compliant</h3>
-        <p>We ensure your site meets accessibility standards to provide an inclusive user experience for all visitors. <a href="https://www.ada.gov/resources/web-guidance/" target="_blank" rel="noreferrer">learn more</a></p></div></div></div>
-</section>`;
-});
-const Offer_svelte_svelte_type_style_lang = "";
-const css$2 = {
-  code: "#offer.svelte-e246ui.svelte-e246ui{z-index:2;position:relative;border-radius:6rem 0 6rem 0}#offer.svelte-e246ui .container.svelte-e246ui{margin:0 auto;gap:3rem}#offer.svelte-e246ui .container h2.svelte-e246ui{font-size:clamp(1.75rem, 4vw, 2.25rem)}#offer.svelte-e246ui .container .right.svelte-e246ui{position:relative;display:flex;justify-content:center;align-items:flex-start;flex-direction:column;gap:1rem;height:100%}#offer.svelte-e246ui .container .right.svelte-e246ui::before{content:url(../../assets/svg/bg-leaves.svg);position:absolute;width:80%;aspect-ratio:1/1;z-index:-1;opacity:0.15;left:50%;top:50%;transform:translate(-50%, -50%)}#offer.svelte-e246ui .container .right .item.svelte-e246ui{padding-left:2rem;margin-bottom:0.5rem}#offer.svelte-e246ui .container .right .item h3.svelte-e246ui{font-size:1.25rem;margin:0;position:relative;text-transform:lowercase}#offer.svelte-e246ui .container .right .item h3.svelte-e246ui::before{content:url(../../assets/svg/checkmark.svg);position:absolute;top:50%;left:0;width:32px;height:32px;transform:translate(calc(-100% - 6px), -50%)\n            }#offer.svelte-e246ui .container .right .item p.svelte-e246ui{margin:0}",
-  map: null
-};
-const Offer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { params } = $$props;
-  if ($$props.params === void 0 && $$bindings.params && params !== void 0)
-    $$bindings.params(params);
-  $$result.css.add(css$2);
-  return `<section data-transition="fade-up" id="offer" class="svelte-e246ui"><div class="container grid svelte-e246ui"><div class="left"><h2 id="offer-title" class="svelte-e246ui"><theme-color>$0</theme-color> down, <theme-color>${escape(params === "presale33" ? "$100" : "$150")}</theme-color> per month</h2>
-      <p class="svelte-e246ui"><theme-color>Arbor Web Design</theme-color> services start at just $150 a month, with $0 down, for a 5-page website. With our help, you can create a professional and effective online presence without breaking the bank.
-
-      </p><p class="svelte-e246ui">You own your domain, content, listings, and profiles, which means you have complete control over your online presence and can make changes or updates at any time. <a href="/contact">Contact us today</a> to get started!</p>
-        
-      </div>
-    <div class="right svelte-e246ui"><div class="item svelte-e246ui"><h3 class="svelte-e246ui">Hosting Fees Included</h3>
-        <p class="svelte-e246ui">Secure, reliable, and fast website hosting without added costs.</p></div>
-      <div class="item svelte-e246ui"><h3 class="svelte-e246ui">free lifetime edits</h3>
-        <p class="svelte-e246ui">24-hour turnaround for unlimited edits.</p></div>
-      <div class="item svelte-e246ui"><h3 class="svelte-e246ui">24/7 Customer Service</h3>
-        <p class="svelte-e246ui">Peace of mind for 24/7 technical assistance, questions, and edits.</p></div></div></div>
-</section>`;
-});
-const Performance_svelte_svelte_type_style_lang = "";
-const css$1 = {
-  code: '#results.svelte-1bgop1m.svelte-1bgop1m{text-align:center}#results.svelte-1bgop1m .container h2.svelte-1bgop1m{margin-bottom:4rem}#results.svelte-1bgop1m .container .grid.svelte-1bgop1m{text-align:center}#results.svelte-1bgop1m .container .grid .item.svelte-1bgop1m{margin-bottom:3rem}@media(min-width: 40em){#results.svelte-1bgop1m .container .grid .item.svelte-1bgop1m{margin-bottom:0}}#results.svelte-1bgop1m .container .grid .item .progress.svelte-1bgop1m{position:relative}#results.svelte-1bgop1m .container .grid .item .progress .num.svelte-1bgop1m{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);font-size:1.75rem;font-family:monospace}#results.svelte-1bgop1m .container .grid .item .progress svg.svelte-1bgop1m{opacity:0;margin:0 auto;width:100px;height:100px}#results.svelte-1bgop1m .container .grid .item .progress svg path.svelte-1bgop1m{transition:stroke-dasharray 0.75s ease-in}#results.svelte-1bgop1m .container .grid .item .progress svg.active.svelte-1bgop1m{opacity:1}#results.svelte-1bgop1m .container .grid .item .progress svg.active path.svelte-1bgop1m{stroke-dasharray:225pt 1000}#results.svelte-1bgop1m .container .grid .item h3.svelte-1bgop1m{margin:1rem 0 1rem;font-size:1.25rem;font-weight:400;font-family:"Montserrat Alternates", sans-serif;white-space:nowrap}#results.svelte-1bgop1m .container .grid .item .description.svelte-1bgop1m{font-size:0.9rem;line-height:1.2}',
-  map: null
-};
-const Performance = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$1);
-  return `<section data-transition="fade-up" id="results" class="svelte-1bgop1m"><div class="container"><h2 id="results-title" class="svelte-1bgop1m">out<theme-color>Perform</theme-color></h2>
-    <div class="grid svelte-1bgop1m"><div class="item svelte-1bgop1m"><div class="progress svelte-1bgop1m"><span class="num svelte-1bgop1m">100</span>
-          <svg data-index="0" width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98" class="${["svelte-1bgop1m", ""].join(" ").trim()}"><defs><style>.cls-1{fill:none;stroke:#23cc6f;stroke-dasharray:0 0 0 1000;stroke-linecap:round;stroke-linejoin:round;stroke-width:6px;}</style></defs><g id="Layer_1-2"><path class="cls-1 svelte-1bgop1m" d="m49,3c25.41,0,46,20.59,46,46s-20.59,46-46,46S3,74.41,3,49,23.59,3,49,3"></path></g></svg></div>
-        <h3 class="svelte-1bgop1m">Performance</h3>
-        <p class="description svelte-1bgop1m">High-performance websites. Fast load times, optimal user experience.</p></div>
-      <div class="item svelte-1bgop1m"><div class="progress svelte-1bgop1m"><span class="num svelte-1bgop1m">100</span>
-          <svg data-index="1" width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98" class="${["svelte-1bgop1m", ""].join(" ").trim()}"><defs><style>.cls-1{fill:none;stroke:#23cc6f;stroke-dasharray:0 0 0 1000;stroke-linecap:round;stroke-linejoin:round;stroke-width:6px;}</style></defs><g id="Layer_1-2"><path class="cls-1 svelte-1bgop1m" d="m49,3c25.41,0,46,20.59,46,46s-20.59,46-46,46S3,74.41,3,49,23.59,3,49,3"></path></g></svg></div>
-        <h3 class="svelte-1bgop1m">Accessibility</h3> 
-        <p class="description svelte-1bgop1m">Inclusive design, using ADA-compliant best practices and accessibility standards.</p></div>
-      <div class="item svelte-1bgop1m"><div class="progress svelte-1bgop1m"><span class="num svelte-1bgop1m">100</span>
-          <svg data-index="2" width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98" class="${["svelte-1bgop1m", ""].join(" ").trim()}"><defs><style>.cls-1{fill:none;stroke:#23cc6f;stroke-dasharray:0 0 0 1000;stroke-linecap:round;stroke-linejoin:round;stroke-width:6px;}</style></defs><g id="Layer_1-2"><path class="cls-1 svelte-1bgop1m" d="m49,3c25.41,0,46,20.59,46,46s-20.59,46-46,46S3,74.41,3,49,23.59,3,49,3"></path></g></svg></div>
-        <h3 class="svelte-1bgop1m">Best Practices</h3> 
-        <p class="description svelte-1bgop1m">Clean, organized code to ensure efficient, secure, and easy to maintain websites.</p></div>
-      <div class="item svelte-1bgop1m"><div class="progress svelte-1bgop1m"><span class="num svelte-1bgop1m">100</span>
-          <svg data-index="3" width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98" class="${["svelte-1bgop1m", ""].join(" ").trim()}"><defs><style>.cls-1{fill:none;stroke:#23cc6f;stroke-dasharray:0 1000;stroke-linecap:round;stroke-linejoin:round;stroke-width:6px;}</style></defs><g id="Layer_1-2"><path class="cls-1 svelte-1bgop1m" d="m49,3c25.41,0,46,20.59,46,46s-20.59,46-46,46S3,74.41,3,49,23.59,3,49,3"></path></g></svg></div>
-        <h3 class="svelte-1bgop1m">SEO</h3> 
-        <p class="description svelte-1bgop1m">Improved online visibility and organic traffic utilizing latest best practices in SEO.</p></div></div></div></section>
-
-`;
-});
-const leaf = "/_app/immutable/assets/bg-leaves.da47a842.svg";
-const Spacer_svelte_svelte_type_style_lang = "";
-const css = {
-  code: ".spacer.svelte-1hacg9s.svelte-1hacg9s{position:relative;text-align:center;margin-top:-4rem}.spacer.svelte-1hacg9s .leaf-divider.svelte-1hacg9s{width:32px}.spacer.svelte-1hacg9s.svelte-1hacg9s::before{content:'';position:absolute;top:50%;left:50%;height:2px;width:4rem;background-color:var(--primary);transform:translate(calc(-100% - 1.6rem), -50%)}.spacer.svelte-1hacg9s.svelte-1hacg9s::after{content:'';position:absolute;top:50%;left:50%;height:2px;width:4rem;background-color:var(--primary);transform:translate(1.5rem, -50%)}",
-  map: null
-};
-const Spacer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css);
-  return `<div class="spacer svelte-1hacg9s"><img class="leaf-divider svelte-1hacg9s"${add_attribute("src", leaf, 0)} alt="leave divider">
-</div>`;
-});
-const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$unsubscribe_page;
-  $$unsubscribe_page = subscribe(page, (value) => value);
-  let promoCode = null;
-  $$unsubscribe_page();
-  return `${$$result.head += `<!-- HEAD_svelte-1d6gpej_START -->${$$result.title = `<title>Arbor Web Designs | Moreno Valley, CA</title>`, ""}<!-- HEAD_svelte-1d6gpej_END -->`, ""}
-
-${validate_component(Hero, "Hero").$$render($$result, {}, {}, {})}
-
-${validate_component(Perks, "Perks").$$render($$result, {}, {}, {})}
-${validate_component(Spacer, "Spacer").$$render($$result, {}, {}, {})}
-${validate_component(Performance, "Performance").$$render($$result, {}, {}, {})}
-${validate_component(Offer, "Offer").$$render($$result, { params: promoCode }, {}, {})}
-${validate_component(Spacer, "Spacer").$$render($$result, {}, {}, {})}
-${validate_component(About, "About").$$render($$result, {}, {}, {})}
-${validate_component(Pricing, "Pricing").$$render($$result, {}, {}, {})}`;
-});
+  });
+  $$payload.out += `<!----></div> <picture><source media="(max-width: 799px)"${attr("srcset", heroWaveMobile)}/> <source media="(min-width: 800px)"${attr("srcset", heroWave)}/> <img class="wave svelte-15dz5ek"${attr("src", heroWave)} alt="Wave" id="wave"/></picture> <picture><source media="(max-width: 1023px)" srcset="https://res.cloudinary.com/dgo7sqipz/image/upload/v1675582419/Arbor%20Web%20Designs/mockup_qcl2hf.webp"/> <source media="(min-width: 1024px)" srcset="https://res.cloudinary.com/dgo7sqipz/image/upload/v1675582419/Arbor%20Web%20Designs/mockup_qcl2hf.webp"/> <img src="https://res.cloudinary.com/dgo7sqipz/image/upload/v1675582419/Arbor%20Web%20Designs/mockup_qcl2hf.webp" alt="Web Mockups" id="mockup" class="svelte-15dz5ek"/></picture></section>`;
+}
+const affordableIcon = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20fill='%23000000'%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='42px'%20height='42px'%20viewBox='0%200%2047%2047'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cpath%20d='M23.501,7.705c0.55,0,1-0.45,1-1V1c0-0.55-0.45-1-1-1s-1,0.45-1,1v5.704C22.501,7.254,22.951,7.705,23.501,7.705z'/%3e%3cpath%20d='M23.501,39.295c-0.55,0-1,0.45-1,1V46c0,0.55,0.45,1,1,1s1-0.45,1-1v-5.704C24.501,39.746,24.051,39.295,23.501,39.295z'%20/%3e%3cpath%20d='M8.299,6.884c-0.389-0.389-1.025-0.389-1.414,0c-0.389,0.389-0.389,1.025,0,1.414l4.033,4.032%20c0.389,0.389,1.025,0.389,1.414,0.001c0.388-0.389,0.388-1.025-0.001-1.414L8.299,6.884z'/%3e%3cpath%20d='M36.084,34.67c-0.389-0.389-1.025-0.389-1.414-0.001c-0.388,0.39-0.388,1.024,0.001,1.414l4.032,4.033%20c0.389,0.389,1.025,0.389,1.414,0c0.389-0.39,0.389-1.025,0-1.414L36.084,34.67z'/%3e%3cpath%20d='M7.705,23.5c0-0.55-0.45-1-1-1H1c-0.55,0-1,0.45-1,1s0.45,1,1,1h5.705C7.255,24.5,7.705,24.05,7.705,23.5z'/%3e%3cpath%20d='M46,22.5h-5.705c-0.55,0-1,0.45-1,1s0.45,1,1,1H46c0.55,0,1-0.45,1-1S46.55,22.5,46,22.5z'/%3e%3cpath%20d='M10.918,34.67l-4.033,4.032c-0.389,0.389-0.389,1.024,0,1.414c0.389,0.389,1.025,0.389,1.414,0l4.032-4.033%20c0.389-0.39,0.389-1.024,0.001-1.414C11.943,34.282,11.307,34.282,10.918,34.67z'/%3e%3cpath%20d='M36.082,12.331l4.035-4.032c0.389-0.389,0.389-1.025,0-1.414c-0.389-0.389-1.025-0.389-1.414,0l-4.034,4.033%20c-0.39,0.389-0.39,1.025-0.001,1.414C35.057,12.719,35.693,12.719,36.082,12.331z'/%3e%3cpath%20d='M30.586,23.163c-0.578-0.414-1.234-0.748-1.975-0.998c-0.737-0.247-1.495-0.461-2.272-0.638%20c-0.623-0.145-1.231-0.276-1.838-0.404v-4.171c0.447,0.091,0.86,0.229,1.233,0.425c0.703,0.36,1.093,1.059,1.166,2.085h5.072%20c-0.1-1.204-0.406-2.199-0.918-2.988c-0.516-0.788-1.16-1.421-1.938-1.899c-0.777-0.474-1.658-0.813-2.648-1.014%20c-0.643-0.131-1.302-0.203-1.969-0.248V11h-2V13.3c-0.736,0.039-1.464,0.108-2.176,0.24c-1.002,0.189-1.904,0.516-2.705,0.979%20c-0.801,0.463-1.447,1.103-1.936,1.915c-0.486,0.817-0.73,1.838-0.73,3.064c0,0.851,0.174,1.572,0.525,2.158%20c0.35,0.592,0.813,1.08,1.389,1.47c0.578,0.388,1.234,0.699,1.975,0.938c0.738,0.242,1.496,0.441,2.273,0.621%20c0.487,0.103,0.948,0.203,1.385,0.304v5.061c-0.117-0.022-0.236-0.036-0.352-0.065c-0.49-0.127-0.92-0.319-1.297-0.582%20c-0.377-0.262-0.682-0.604-0.92-1.016c-0.24-0.414-0.359-0.91-0.359-1.482H14.5c0.051,1.273,0.346,2.354,0.884,3.229%20c0.538,0.877,1.226,1.588,2.067,2.125c0.838,0.539,1.797,0.922,2.873,1.145c0.713,0.149,1.441,0.231,2.176,0.283V36h2v-2.304%20c0.805-0.045,1.6-0.129,2.381-0.297c1.064-0.222,2.014-0.599,2.84-1.125c0.824-0.525,1.494-1.223,2.008-2.084%20c0.515-0.867,0.771-1.938,0.771-3.215c0-0.902-0.176-1.658-0.527-2.272C31.622,24.089,31.161,23.574,30.586,23.163z%20M22.185,20.532c-0.563-0.189-1.021-0.435-1.369-0.733c-0.353-0.3-0.525-0.689-0.525-1.166c0-0.401,0.098-0.719,0.3-0.955%20c0.198-0.24,0.442-0.42,0.733-0.545c0.287-0.126,0.605-0.208,0.956-0.245c0.08-0.008,0.145-0.007,0.222-0.013v3.751%20C22.397,20.593,22.283,20.563,22.185,20.532z%20M26.827,28.875c-0.228,0.312-0.509,0.562-0.849,0.748%20c-0.336,0.189-0.711,0.327-1.125,0.416c-0.119,0.025-0.235,0.039-0.354,0.059v-4.595c0.395,0.121,0.758,0.248,1.066,0.384%20c0.513,0.227,0.908,0.482,1.184,0.771c0.275,0.287,0.412,0.633,0.412,1.033C27.163,28.165,27.055,28.561,26.827,28.875z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e";
+const speedIcon = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='42px'%20height='42px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M17.7453%2016C18.5362%2014.8661%2019%2013.4872%2019%2012C19%2011.4851%2018.9444%2010.9832%2018.8389%2010.5M6.25469%2016C5.46381%2014.8662%205%2013.4872%205%2012C5%208.13401%208.13401%205%2012%205C12.4221%205%2012.8355%205.03737%2013.2371%205.10897M16.4999%207.5L11.9999%2012M22%2012C22%2017.5228%2017.5228%2022%2012%2022C6.47715%2022%202%2017.5228%202%2012C2%206.47715%206.47715%202%2012%202C17.5228%202%2022%206.47715%2022%2012ZM13%2012C13%2012.5523%2012.5523%2013%2012%2013C11.4477%2013%2011%2012.5523%2011%2012C11%2011.4477%2011.4477%2011%2012%2011C12.5523%2011%2013%2011.4477%2013%2012Z'%20stroke='%23000000'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e";
+const seoIcon = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='iso-8859-1'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20fill='%23000000'%20height='42px'%20width='42px'%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20512%20512'%20xml:space='preserve'%3e%3cg%3e%3cg%3e%3cg%3e%3cpath%20d='M472.178,34.62H39.822C17.864,34.62,0,52.485,0,74.442c0,17.955,0,345.233,0,363.115%20c0,21.958,17.864,39.822,39.822,39.822h432.356c21.958,0,39.822-17.864,39.822-39.822c0-17.89,0-345.165,0-363.115%20C512,52.485,494.136,34.62,472.178,34.62z%20M477.867,437.557c0,3.137-2.552,5.689-5.689,5.689H39.822%20c-3.137,0-5.689-2.552-5.689-5.689V153.839h443.733V437.557z%20M477.867,119.706H34.133V74.442c0-3.137,2.552-5.689,5.689-5.689%20h432.356c3.137,0,5.689,2.552,5.689,5.689V119.706z'/%3e%3ccircle%20cx='71.805'%20cy='94.231'%20r='12.836'/%3e%3ccircle%20cx='112.959'%20cy='94.231'%20r='12.836'/%3e%3ccircle%20cx='154.112'%20cy='94.231'%20r='12.836'/%3e%3cpath%20d='M385.157,328.686l24.583,24.582c6.664,6.665,17.471,6.666,24.136,0c6.665-6.665,6.665-17.471,0-24.136l-24.583-24.582%20c7.501-17.177,4.248-37.959-9.786-51.992c-18.29-18.291-48.052-18.291-66.343,0c-18.291,18.291-18.291,48.052,0,66.343%20C347.152,332.888,367.889,336.228,385.157,328.686z%20M357.301,276.694c4.982-4.982,13.089-4.982,18.071,0%20c4.981,4.981,4.982,13.086,0.002,18.068c-0.001,0.001-0.002,0.001-0.003,0.002c-0.001,0.001-0.001,0.002-0.002,0.002%20c-4.982,4.979-13.087,4.979-18.068-0.002C352.319,289.783,352.319,281.676,357.301,276.694z'/%3e%3cpath%20d='M90.192,358.267h209.969c9.425,0,17.067-7.641,17.067-17.067s-7.641-17.067-17.067-17.067H90.192%20c-9.425,0-17.067,7.641-17.067,17.067S80.766,358.267,90.192,358.267z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e";
+const sunsetIcon = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='42px'%20height='42px'%20viewBox='0%200%201024%201024'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill='%23000000'%20d='M82.56%20640a448%20448%200%201%201%20858.88%200h-67.2a384%20384%200%201%200-724.288%200H82.56zM32%20704h960q32%200%2032%2032t-32%2032H32q-32%200-32-32t32-32zm256%20128h448q32%200%2032%2032t-32%2032H288q-32%200-32-32t32-32z'/%3e%3c/svg%3e";
+const secureIcon = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='42px'%20height='42px'%20viewBox='0%200%2048%2048'%20xmlns='http://www.w3.org/2000/svg'%3e%3ctitle%3esecurity-verified%3c/title%3e%3cg%20id='Layer_2'%20data-name='Layer%202'%3e%3cg%20id='invisible_box'%20data-name='invisible%20box'%3e%3crect%20width='48'%20height='48'%20fill='none'/%3e%3c/g%3e%3cg%20id='icons_Q2'%20data-name='icons%20Q2'%3e%3cpath%20d='M24,6.2c5.3,1.5,11.1,3.3,14,4.3V26.2c0,3.4-3.7,9.4-14,15.4-10.3-6.1-14-12-14-15.4V10.5c2.9-1.1,8.7-2.8,14-4.3M24,2S6,7.1,6,8V26.2c0,9.2,13.3,17.3,17,19.5a1.8,1.8,0,0,0,2,0c3.8-2.1,17-10.3,17-19.5V8c0-.9-18-6-18-6Z'/%3e%3cpath%20d='M19.6,29.4l-5-4.9a2.1,2.1,0,0,1-.2-2.7,1.9,1.9,0,0,1,3-.2L21,25.2l9.6-9.6a2,2,0,0,1,2.8,2.8l-11,11A1.9,1.9,0,0,1,19.6,29.4Z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e";
+const accessibleIcon = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='42px'%20height='42px'%20viewBox='0%200%2048%2048'%20xmlns='http://www.w3.org/2000/svg'%3e%3ctitle%3eaccessible-forward%3c/title%3e%3cg%20id='Layer_2'%20data-name='Layer%202'%3e%3cg%20id='invisible_box'%20data-name='invisible%20box'%3e%3crect%20width='48'%20height='48'%20fill='none'/%3e%3c/g%3e%3cg%20id='Q3_icons'%20data-name='Q3%20icons'%3e%3cg%3e%3cpath%20d='M18,39a9,9,0,0,1-1.4-17.9l3.9-3.9L18,17A13,13,0,1,0,30.5,33.5H26.3A9.1,9.1,0,0,1,18,39Z'/%3e%3ccircle%20cx='39'%20cy='9'%20r='4'/%3e%3cpath%20d='M34,25.5H26.5l9.9-9.9L27.6,6.8a2.9,2.9,0,0,0-4.2,0l-3.8,3.8a2,2,0,0,0,2.8,2.8l3.1-3.1L29.2,14,18.8,24.4a2.9,2.9,0,0,0-.7,3.2,3,3,0,0,0,2.8,1.9H33V40a2,2,0,0,0,4,0V28.5A2.9,2.9,0,0,0,34,25.5Z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e";
+function Perks($$payload) {
+  $$payload.out += `<section id="perks" class="svelte-1h7eht0"><div class="container"><h2><theme-color>Arbor</theme-color> perks</h2> <div class="grid container svelte-1h7eht0"><div class="item svelte-1h7eht0"><img class="icon svelte-1h7eht0"${attr("src", affordableIcon)} alt="Affordable Services"/> <h3 class="svelte-1h7eht0">affordable</h3> <p>Introducing an affordable subscription model that simplifies website management at a budget-friendly price.</p></div> <div class="item svelte-1h7eht0"><img class="icon svelte-1h7eht0"${attr("src", speedIcon)} alt="Performance Driven"/> <h3 class="svelte-1h7eht0">performance-drive</h3> <p>Lightning-fast website performance fine-tuned with our advanced optimization techniques to ensure maximum speed and responsiveness.</p></div> <div class="item svelte-1h7eht0"><img class="icon svelte-1h7eht0"${attr("src", seoIcon)} alt="Search Engine Optimized"/> <h3 class="svelte-1h7eht0">search optimization</h3> <p>Boost your website's visibility and drive more traffic with our targeted SEO services to identify effective keywords.</p></div> <div class="item svelte-1h7eht0"><img class="icon svelte-1h7eht0"${attr("src", sunsetIcon)} alt="Beautiful Designs"/> <h3 class="svelte-1h7eht0">eye-catching design</h3> <p>Make a lasting impression with our eye-catching website designs that capture the essence of your brand and engages your visitors.</p></div> <div class="item svelte-1h7eht0"><img class="icon svelte-1h7eht0"${attr("src", secureIcon)} alt="Secure Websites"/> <h3 class="svelte-1h7eht0">secure hosting</h3> <p>Rest easy with our secure static website hosting, making it virtually impossible for attackers to compromise your site.</p></div> <div class="item svelte-1h7eht0"><img class="icon svelte-1h7eht0"${attr("src", accessibleIcon)} alt="ADA Compliant"/> <h3 class="svelte-1h7eht0">ada-compliant</h3> <p>We ensure your site meets accessibility standards to provide an inclusive user experience for all visitors. <a href="https://www.ada.gov/resources/web-guidance/" target="_blank" rel="noreferrer">learn more</a></p></div></div></div></section>`;
+}
+function Offer($$payload, $$props) {
+  $$payload.out += `<section data-transition="fade-up" id="offer" class="svelte-e246ui"><div class="container grid svelte-e246ui"><div class="left"><h2 id="offer-title" class="svelte-e246ui"><theme-color>$0</theme-color> down, <theme-color>${escape_html("$150")}</theme-color> per month</h2> <p><theme-color>Arbor Web Design</theme-color> services start at just $150 a month, with $0 down, for a 5-page website. With our help, you can create a professional and effective online presence without breaking the bank.</p><p>You own your domain, content, listings, and profiles, which means you have complete control over your online presence and can make changes or updates at any time. <a href="/contact">Contact us today</a> to get started!</p></div> <div class="right svelte-e246ui"><div class="item svelte-e246ui"><h3 class="svelte-e246ui">Hosting Fees Included</h3> <p class="svelte-e246ui">Secure, reliable, and fast website hosting without added costs.</p></div> <div class="item svelte-e246ui"><h3 class="svelte-e246ui">free lifetime edits</h3> <p class="svelte-e246ui">24-hour turnaround for unlimited edits.</p></div> <div class="item svelte-e246ui"><h3 class="svelte-e246ui">24/7 Customer Service</h3> <p class="svelte-e246ui">Peace of mind for 24/7 technical assistance, questions, and edits.</p></div></div></div></section>`;
+}
+function Performance($$payload) {
+  const svgs = [false, false, false, false];
+  $$payload.out += `<section data-transition="fade-up" id="results" class="svelte-1bgop1m"><div class="container svelte-1bgop1m"><h2 id="results-title" class="svelte-1bgop1m">out<theme-color>Perform</theme-color></h2> <div class="grid svelte-1bgop1m"><div class="item svelte-1bgop1m"><div class="progress svelte-1bgop1m"><span class="num svelte-1bgop1m">100</span> <svg data-index="0" width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98"${attr_class("svelte-1bgop1m", void 0, { "active": svgs[0] })}><defs><style>.cls-1{fill:none;stroke:#23cc6f;stroke-dasharray:0 0 0 1000;stroke-linecap:round;stroke-linejoin:round;stroke-width:6px;}</style></defs><g id="Layer_1-2"><path class="cls-1 svelte-1bgop1m" d="m49,3c25.41,0,46,20.59,46,46s-20.59,46-46,46S3,74.41,3,49,23.59,3,49,3"></path></g></svg></div> <h3 class="svelte-1bgop1m">Performance</h3> <p class="description svelte-1bgop1m">High-performance websites. Fast load times, optimal user experience.</p></div> <div class="item svelte-1bgop1m"><div class="progress svelte-1bgop1m"><span class="num svelte-1bgop1m">100</span> <svg data-index="1" width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98"${attr_class("svelte-1bgop1m", void 0, { "active": svgs[1] })}><defs><style>.cls-1{fill:none;stroke:#23cc6f;stroke-dasharray:0 0 0 1000;stroke-linecap:round;stroke-linejoin:round;stroke-width:6px;}</style></defs><g id="Layer_1-2"><path class="cls-1 svelte-1bgop1m" d="m49,3c25.41,0,46,20.59,46,46s-20.59,46-46,46S3,74.41,3,49,23.59,3,49,3"></path></g></svg></div> <h3 class="svelte-1bgop1m">Accessibility</h3> <p class="description svelte-1bgop1m">Inclusive design, using ADA-compliant best practices and accessibility standards.</p></div> <div class="item svelte-1bgop1m"><div class="progress svelte-1bgop1m"><span class="num svelte-1bgop1m">100</span> <svg data-index="2" width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98"${attr_class("svelte-1bgop1m", void 0, { "active": svgs[2] })}><defs><style>.cls-1{fill:none;stroke:#23cc6f;stroke-dasharray:0 0 0 1000;stroke-linecap:round;stroke-linejoin:round;stroke-width:6px;}</style></defs><g id="Layer_1-2"><path class="cls-1 svelte-1bgop1m" d="m49,3c25.41,0,46,20.59,46,46s-20.59,46-46,46S3,74.41,3,49,23.59,3,49,3"></path></g></svg></div> <h3 class="svelte-1bgop1m">Best Practices</h3> <p class="description svelte-1bgop1m">Clean, organized code to ensure efficient, secure, and easy to maintain websites.</p></div> <div class="item svelte-1bgop1m"><div class="progress svelte-1bgop1m"><span class="num svelte-1bgop1m">100</span> <svg data-index="3" width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98"${attr_class("svelte-1bgop1m", void 0, { "active": svgs[3] })}><defs><style>.cls-1{fill:none;stroke:#23cc6f;stroke-dasharray:0 1000;stroke-linecap:round;stroke-linejoin:round;stroke-width:6px;}</style></defs><g id="Layer_1-2"><path class="cls-1 svelte-1bgop1m" d="m49,3c25.41,0,46,20.59,46,46s-20.59,46-46,46S3,74.41,3,49,23.59,3,49,3"></path></g></svg></div> <h3 class="svelte-1bgop1m">SEO</h3> <p class="description svelte-1bgop1m">Improved online visibility and organic traffic utilizing latest best practices in SEO.</p></div></div></div></section>`;
+}
+const leaf = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20202.54%20220.91'%3e%3cdefs%3e%3cstyle%3e.cls-1{fill:%23919523;}%3c/style%3e%3c/defs%3e%3cg%20%3e%3cpath%20class='cls-1'%20d='m202.54,205.49c-5.26,1.13-10.53,2.27-20.5,5.37-9,2.8-43.71,13.44-75.95,8.97-35.13-4.88-80.68-26.73-88.81-40.44,4.03-.86,8.42-1.73,13.01-2.54,2.31-.41,4.69-.81,7.09-1.18.51-.08,1.03-.15,1.54-.23.5-.08,1.01-.16,1.54-.23,1.03-.15,2.06-.29,3.1-.43,1.08-.15,2.17-.29,3.25-.42.47-.06.94-.11,1.41-.16,4.62-.53,9.23-.92,13.66-1.11,1.02-.04,2.02-.07,3.01-.09,29.75-.59,67.64,7.33,67.64,7.33,0,0-22.8-12.37-54.97-14.67-3.51-.25-7.14-.34-10.82-.29-3.17.04-6.38.16-9.58.38-.67.03-1.33.08-1.99.13-2.75.19-5.5.45-8.2.75-2.03.21-4.04.45-6,.72-4.09.54-8.05,1.14-11.74,1.77-.81.14-1.6.27-2.37.42-.78.14-1.54.27-2.29.41-2.84.51-5.48,1.04-7.87,1.54.76-2.29,2.13-4.69,4.05-7.14.46-.59.94-1.18,1.46-1.77.22-.26.46-.52.7-.77.26-.28.52-.57.8-.85.52-.54,1.05-1.08,1.62-1.62.47-.46.96-.91,1.48-1.37.25-.23.5-.44.75-.66.41-.36.82-.71,1.25-1.07.36-.3.73-.61,1.11-.91.27-.22.55-.44.83-.66.56-.45,1.13-.88,1.71-1.31.29-.22.59-.43.88-.64.3-.22.6-.44.91-.65.3-.22.6-.43.92-.64,1.14-.79,2.32-1.58,3.55-2.34.66-.42,1.33-.84,2.02-1.25.2-.12.39-.24.59-.35.5-.3,1-.6,1.51-.89.38-.22.77-.45,1.17-.67.46-.26.94-.52,1.41-.78.32-.18.64-.35.97-.52.62-.33,1.25-.66,1.89-.99.19-.11.4-.21.61-.31.86-.44,1.73-.87,2.61-1.29.05-.02.09-.04.14-.07.9-.42,1.79-.85,2.71-1.26.81-.38,1.62-.73,2.44-1.08.46-.2.94-.41,1.41-.6.52-.22,1.04-.43,1.57-.65.33-.14.67-.27,1.02-.41.66-.27,1.33-.53,2.02-.78.27-.11.55-.22.85-.32.7-.27,1.42-.52,2.14-.78.23-.08.47-.17.7-.24.5-.18,1.01-.35,1.51-.53,1.02-.33,2.03-.67,3.06-.99.52-.16,1.03-.31,1.55-.47,2.12-.63,4.27-1.22,6.42-1.75,1.09-.26,2.17-.52,3.25-.76,12.63-2.8,25.68-3.7,37.8-1.71,57.82,9.54,81.8,53.41,82.46,75.87Z'/%3e%3cpath%20class='cls-1'%20d='m36.94,144.24c-.1-13.95-.55-28.66,3.12-43.91,3.73-15.5,10.65-29.69,10.94-30.26-.23.86-7.63,28.37-8.9,49.39-.53,8.84.92,16.73,1.86,20.75,2.84-1.51,5.82-2.98,8.92-4.37,10.3-4.61,20.92-7.98,31.3-10.01,3.26-9.9,5.8-19.98,7.12-29.32,4.58-32.24-5.95-66.97-8.73-75.98-3.07-9.98-4.19-15.25-5.3-20.52C54.79.6,10.85,24.44,1.12,82.23c-4.37,25.96,4.64,56.33,16.86,77.56,4.49-5.29,10.99-10.62,18.95-15.55Z'/%3e%3c/g%3e%3c/svg%3e";
+function Spacer($$payload) {
+  $$payload.out += `<div class="spacer svelte-1hacg9s"><img class="leaf-divider svelte-1hacg9s"${attr("src", leaf)} alt="leave divider"/></div>`;
+}
+function _page($$payload, $$props) {
+  push();
+  head($$payload, ($$payload2) => {
+    $$payload2.title = `<title>Arbor Web Designs | Moreno Valley, CA</title>`;
+  });
+  Hero($$payload);
+  $$payload.out += `<!----> `;
+  Perks($$payload);
+  $$payload.out += `<!----> `;
+  Spacer($$payload);
+  $$payload.out += `<!----> `;
+  Performance($$payload);
+  $$payload.out += `<!----> `;
+  Offer($$payload);
+  $$payload.out += `<!----> `;
+  Spacer($$payload);
+  $$payload.out += `<!----> `;
+  About($$payload);
+  $$payload.out += `<!----> `;
+  Pricing($$payload);
+  $$payload.out += `<!---->`;
+  pop();
+}
 export {
-  Page as default
+  _page as default
 };

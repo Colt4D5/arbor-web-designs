@@ -1,10 +1,17 @@
 <script>
-  export let href
-  export let classes = ''
+  /**
+   * @typedef {Object} Props
+   * @property {any} href
+   * @property {string} [classes]
+   * @property {import('svelte').Snippet} [children]
+   */
+
+  /** @type {Props} */
+  let { href, classes = '', children } = $props();
 </script>
 
 <a class={ classes === '' ? 'button' : `button ${classes}` } href={ href } role="button">
-  <slot />
+  {@render children?.()}
 </a>
 
 <style lang="postcss">

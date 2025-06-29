@@ -2,7 +2,7 @@
 	import Hamburger from '$components/Hamburger.svelte';
   import logo from '$assets/svg/logo.svg'
 
-  import { page } from '$app/stores'
+  import { page } from '$app/state'
 
   // import { onMount } from 'svelte'
 
@@ -19,19 +19,19 @@
     <nav>
       <ul id="logo-container"><li><a href="/"><img src={ logo } alt="Arbor Web Designs | Moreno Valley, CA" /></a></li></ul>
       <ul id="nav-container" class="show-for-large">
-        <li class="nav-item" class:active={$page.url.pathname === '/'}>
+        <li class="nav-item" class:active={page.url.pathname === '/'}>
           <a href="/">Home</a>
         </li>
-        <li class="nav-item" class:active={$page.url.pathname === '/about-arbor'}>
+        <li class="nav-item" class:active={page.url.pathname === '/about-arbor'}>
           <a href="/about-arbor">About</a>
         </li>
-        <li class="nav-item" class:active={$page.url.pathname == '/services'}>
+        <li class="nav-item" class:active={page.url.pathname == '/services'}>
           <a href="/services">Services</a>
         </li>
-        <!-- <li class="nav-item" class:active={$page.url.pathname == '/blog'}>
+        <!-- <li class="nav-item" class:active={page.url.pathname == '/blog'}>
           <a href="/blog">Blog</a>
         </li> -->
-        <li class="nav-item" class:active={$page.url.pathname == '/contact'}>
+        <li class="nav-item" class:active={page.url.pathname == '/contact'}>
           <a href="/contact">Contact</a>
         </li>
         <!-- <li class="toggle-li">

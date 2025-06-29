@@ -1,13 +1,13 @@
 <script>
-  export let params
 
   import observer, { fadeUp } from '$utils/useObserverAction';
   // import { fadeUp } from '$utils/useObserverAction';
 
   import checkmark from '$assets/svg/checkmark.svg'
+  let { params } = $props();
 </script>
 
-<section data-transition="fade-up" use:observer on:enterViewport={fadeUp} id="offer">
+<section data-transition="fade-up" use:observer onenterViewport={fadeUp} id="offer">
   <div class="container grid">
     <div class="left">
       <h2 id="offer-title"><theme-color>$0</theme-color> down, <theme-color>{params === 'presale33' ? '$100' : '$150'}</theme-color> per month</h2>

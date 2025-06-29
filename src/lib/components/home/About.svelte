@@ -3,7 +3,7 @@
   import { fadeUp } from '$utils/useObserverAction';
 </script>
 
-<section data-transition="fade-up" use:observer on:enterViewport={fadeUp} id="about" aria-labelledby="about-title">
+<section data-transition="fade-up" use:observer onenterViewport={fadeUp} id="about" aria-labelledby="about-title">
   <div class="container">
     <h2 id="about-title">about <theme-color>Arbor</theme-color></h2>
 

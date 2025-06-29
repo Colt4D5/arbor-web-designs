@@ -5,7 +5,7 @@
   import { fadeUp } from '$utils/useObserverAction';
 </script>
 
-<section data-transition="fade-up" use:observer on:enterViewport={fadeUp} id="price-cards">
+<section data-transition="fade-up" use:observer onenterViewport={fadeUp} id="price-cards">
   <!-- LEFT CARD -->
   <div class="container">
     <h2>pricing</h2>

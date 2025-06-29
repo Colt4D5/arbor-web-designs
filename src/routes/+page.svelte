@@ -1,6 +1,6 @@
 <script>
 	import { browser } from '$app/environment';
-	import { beforeUpdate } from 'svelte';
+	
 
 	import Pricing from '$components/home/Pricing.svelte';
 	import About from '$components/home/About.svelte';
@@ -11,11 +11,11 @@
 	import Performance from "$components/home/Performance.svelte"
 	import Spacer from '$components/Spacer.svelte';
 
-	import {page} from '$app/stores';
+	import {page} from '$app/state';
 
-  let promoCode = null;
+  let promoCode = $state(null);
 	if (browser) {
-		promoCode =  $page.url.searchParams.get('promo') || null;
+		promoCode =  page.url.searchParams.get('promo') || null;
 	}
   // beforeUpdate(() => {
   // });

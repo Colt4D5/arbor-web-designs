@@ -1,8 +1,14 @@
 <script>
-  export let header
-  export let alignment
-  export let overlay = ''
   import intHeaderLeaf from '$assets/svg/int-header-leaf.svg'
+  /**
+   * @typedef {Object} Props
+   * @property {any} header
+   * @property {any} alignment
+   * @property {string} [overlay]
+   */
+
+  /** @type {Props} */
+  let { header, alignment, overlay = '' } = $props();
 </script>
 
 <div id="headerimage" class="interior" style={`background-image: url(${header});background-position: ${alignment}`}>

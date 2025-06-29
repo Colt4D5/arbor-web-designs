@@ -55,7 +55,7 @@
 				flex: 1;
 			}
 		}
-		& p:has( + ul) {
+		& p:has(:global( + ul)) {
 			margin-bottom: 0;
 		}
 		& ul {

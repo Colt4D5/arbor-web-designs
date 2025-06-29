@@ -1,7 +1,7 @@
 <script>
   import closeIcon from '$assets/svg/close.svg'
 
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
 
   import { onMount } from 'svelte';
 
@@ -21,21 +21,21 @@
 <div id="offcanvas-nav">
   <nav>
     <ul>
-      <li class="nav-item" class:active={$page.url.pathname === '/'}>
-        <a href="/" on:click={toggleMenu}>Home</a>
+      <li class="nav-item" class:active={page.url.pathname === '/'}>
+        <a href="/" onclick={toggleMenu}>Home</a>
       </li>
-      <li class="nav-item" class:active={$page.url.pathname == '/about-arbor'}>
-        <a href="/about-arbor" on:click={toggleMenu}>About</a>
+      <li class="nav-item" class:active={page.url.pathname == '/about-arbor'}>
+        <a href="/about-arbor" onclick={toggleMenu}>About</a>
       </li>
-      <li class="nav-item" class:active={$page.url.pathname == '/services'}>
-        <a href="/services" on:click={toggleMenu}>Services</a>
+      <li class="nav-item" class:active={page.url.pathname == '/services'}>
+        <a href="/services" onclick={toggleMenu}>Services</a>
       </li>
-      <li class="nav-item" class:active={$page.url.pathname == '/contact'}>
-        <a href="/contact" on:click={toggleMenu}>Contact</a>
+      <li class="nav-item" class:active={page.url.pathname == '/contact'}>
+        <a href="/contact" onclick={toggleMenu}>Contact</a>
       </li>
     </ul>
   </nav>
-  <button id="close-btn" on:click={toggleMenu} class="no-styles">
+  <button id="close-btn" onclick={toggleMenu} class="no-styles">
     <img src={ closeIcon } alt="Close button">
   </button>
 </div>

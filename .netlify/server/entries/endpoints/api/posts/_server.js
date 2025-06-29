@@ -1,4 +1,4 @@
-import { j as json } from "../../../../chunks/index2.js";
+import { j as json } from "../../../../chunks/index.js";
 const success = true;
 const posts = [
   {
